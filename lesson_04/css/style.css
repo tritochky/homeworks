@@ -1,0 +1,92 @@
+@import url("reset.css");
+@import url("fonts.css");
+@import url("https://fonts.googleapis.com/css?family=Exo+2:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic");
+@import url("https://fonts.googleapis.com/css?family=Tektur:regular,500,600,700,800,900");
+
+body {
+    font-family: "Rubik", sans-serif;
+    font-size: 18px;
+}
+
+.main-title {
+    font-family: "holos", serif;
+    font-size: 32px;
+    color: crimson;
+    text-align: center;
+    text-shadow: 3px 3px 5px rgba(255, 0, 170, 0.507);
+    line-height: 1.8;
+    letter-spacing: 7px;
+}
+
+.title {
+    font-family: "Tektur", sans-serif;
+    font-size: 28px;
+    font-style: italic;
+    text-decoration: underline;
+    text-decoration-color: rgb(255, 0, 170);
+}
+
+.sub-title {
+    font-family: "Exo 2", sans-serif;
+    font-size: 24px;
+    text-decoration: underline;
+    text-decoration-color: rgb(6, 199, 6);
+    text-decoration-style: wavy;
+}
+
+.dedication {
+    font-family: "Caveat", cursive;
+    font-size: 26px;
+    font-weight: 700;
+    color: blueviolet;
+    text-align: right;
+    text-transform: capitalize;
+    word-spacing: 2px;
+}
+
+.sub-title,
+.title,
+.name {
+    font-weight: 500;
+}
+
+.name,
+.footer {
+    font-style: oblique;
+    color: chocolate;
+}
+
+.link {
+    color: rgb(27, 141, 218);
+}
+
+.quote {
+    color: rgb(98, 179, 17);
+    text-decoration: overline;
+    text-decoration-style: dotted;
+}
+
+.text {
+    text-align: justify;
+}
+
+.footer {
+    text-decoration: line-through;
+    text-decoration-style: double;
+    text-transform: uppercase;
+}
+
+.to-home {
+    text-decoration: underline;
+    text-decoration-style: dashed;
+    text-transform: lowercase;
+}
+
+.list,
+.text {
+    line-height: 1.5;
+}
+
+.example {
+    white-space: nowrap;
+}
