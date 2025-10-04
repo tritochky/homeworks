@@ -1,7 +1,7 @@
 @import url("reset.css");
 @import url("fonts.css");
-@import url("https://fonts.googleapis.com/css?family=Exo+2:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic");
-@import url("https://fonts.googleapis.com/css?family=Tektur:regular,500,600,700,800,900");
+@import url("https://fonts.googleapis.com/css2?family=Exo%202:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tektur:wght@600&display=swap");
 
 body {
     font-family: "Rubik", sans-serif;
@@ -37,15 +37,12 @@ body {
 .dedication {
     font-family: "Caveat", cursive;
     font-size: 26px;
-    font-weight: 700;
     color: blueviolet;
     text-align: right;
     text-transform: capitalize;
     word-spacing: 2px;
 }
 
-.sub-title,
-.title,
 .name {
     font-weight: 500;
 }
