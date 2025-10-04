@@ -90,3 +90,34 @@ body {
 .example {
     white-space: nowrap;
 }
+
+
+.new-title {
+    font-family: "GreatVictorian2", serif;
+    font-size: 50px;
+    color: rgb(43, 220, 20);
+    text-align: center;
+    text-shadow:
+        3px 3px 5px rgba(255, 0, 64, 0.836),
+        15px 15px 17px rgb(44, 7, 80);
+    line-height: 2.3;
+    letter-spacing: 7px;
+}
+.article1 {
+    font-family: "GreatVictorian1", sans-serif;
+    font-size: 14px;
+    text-decoration: underline;
+    text-decoration-color: rgb(6, 19, 199);
+    text-align: center;
+    text-decoration-style: dotted;
+    line-height: 1.5;
+}
+.article2 {
+    font-family: "GreatVictorian3", sans-serif;
+    font-size: 18px;
+    text-decoration: underline;
+    text-decoration-color: rgb(199, 6, 6);
+    text-align: center;
+    text-decoration-style: dashed;
+    line-height: 1.5;
+}
