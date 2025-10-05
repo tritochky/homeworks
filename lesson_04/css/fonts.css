@@ -7,24 +7,24 @@
 }
 
 @font-face {
-    font-family: "GreatVictorian1";
-    src: url("../fonts/GreatVictorian-Standard.woff2") format("woff2");
+    font-family: "GreatVictorian";
+    src: url("../fonts/GreatVictorian/GreatVictorian-Standard.woff2") format("woff2");
     font-weight: 300;
     font-style: italic;
     font-display: swap;
 }
 
 @font-face {
-    font-family: "GreatVictorian2";
-    src: url("../fonts/GreatVictorian-Swashed.woff2") format("woff2");
+    font-family: "GreatVictorian";
+    src: url("../fonts/GreatVictorian/GreatVictorian-Swashed.woff2") format("woff2");
     font-weight: 800;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: "GreatVictorian3";
-    src: url("../fonts/GreatVictorian-SwashedSC.woff2") format("woff2");
+    font-family: "GreatVictorian";
+    src: url("../fonts/GreatVictorian/GreatVictorian-SwashedSC.woff2") format("woff2");
     font-weight: 100;
     font-style: normal;
     font-display: swap;
