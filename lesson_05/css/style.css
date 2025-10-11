@@ -1,0 +1,282 @@
+@import url("reset.css");
+@import url("fonts.css");
+
+body {
+    font-family: "Lato", sans-serif;
+    font-size: 18px;
+}
+
+.navigation {
+    margin: 30px;
+    padding: 0 10px;
+}
+
+.main-title {
+    font-family: "holos", serif;
+    font-size: 32px;
+    color: #dc143c;
+    text-align: center;
+    text-shadow: 3px 3px 5px rgba(255, 0, 170, 0.507);
+    line-height: 1.8;
+    letter-spacing: 7px;
+}
+
+.title {
+    font-family: "Tektur", sans-serif;
+    font-size: 28px;
+    font-style: italic;
+    text-decoration: underline;
+    text-decoration-color: rgb(255, 0, 170);
+}
+
+.link {
+    color: rgb(27, 141, 218);
+}
+
+.navigation {
+    background-color: hsl(61, 94%, 50%);
+}
+.article {
+    background-color: #06b649;
+}
+.article1 {
+    background: hsl(61, 96%, 47%);
+}
+.article2 {
+    background: hsl(197, 94%, 42%);
+}
+.article3 {
+    background: hsl(303, 80%, 66%);
+}
+.text {
+    background-color: #b10729;
+}
+.image,
+.image1,
+.image2 {
+    background-color: #3106ce;
+}
+
+.experiment1 .article,
+.experiment1 .text,
+.experiment1 .image {
+    padding-left: 30px;
+    padding-right: 100px;
+    padding-top: 50px;
+    padding-bottom: 70px;
+}
+
+.experiment2 .article,
+.experiment2 .text,
+.experiment2 .image {
+    padding: 20% 2% 30% 10%;
+}
+
+.experiment3 .article,
+.experiment3 .text,
+.experiment3 .image {
+    margin: 40px;
+}
+
+.experiment9 .image,
+.experiment8 .image,
+.experiment8 .image1,
+.experiment7 .article3,
+.experiment5 .article1,
+.experiment3 .image,
+.experiment4 .image,
+.experiment4 .image2,
+.experiment6 .image,
+.experiment5 .article {
+    padding: 15px;
+}
+
+.experiment4 .article {
+    margin-top: -3%;
+    margin-right: -70px;
+}
+.experiment4 .text {
+    margin-left: -60px;
+}
+
+.experiment4 .image {
+    margin-bottom: -2%;
+}
+
+.experiment5 .article {
+    margin-bottom: 50px;
+}
+
+.experiment5 .article1 {
+    margin-top: 30px;
+}
+
+.experiment10 .article,
+.experiment7 .article,
+.experiment7 .article1,
+.experiment7 .article3,
+.experiment6 .article {
+    width: 500px;
+    height: 200px;
+}
+
+.experiment6 .article1 {
+    width: 75%;
+    height: 1%;
+}
+
+.experiment6 .article2 {
+    margin-bottom: 30px;
+    max-width: 900px;
+    max-height: 100px;
+}
+
+.experiment6 .article3 {
+    min-width: 400px;
+    min-height: 100px;
+}
+
+.experiment6 .text {
+    width: 700px;
+    height: 400px;
+}
+
+.experiment6 .image {
+    width: 1400px;
+    height: 500px;
+}
+
+.experiment7 .article {
+    overflow: hidden;
+}
+
+.experiment7 .article1 {
+    overflow: scroll;
+}
+
+.experiment7 .article2 {
+    width: 100%;
+    overflow: auto;
+}
+
+.experiment7 .article3 {
+    white-space: nowrap;
+    overflow: auto;
+}
+
+.experiment8 .image {
+    vertical-align: top;
+}
+
+.experiment8 .image1 {
+    vertical-align: bottom;
+}
+
+.experiment4 .image2 {
+    vertical-align: -300px;
+}
+
+.experiment9 .article2 {
+    display: none;
+}
+
+.experiment9 .article3 {
+    padding: 10px;
+    margin: 10px;
+    display: inline;
+}
+
+.experiment9 .text {
+    display: block;
+    padding: 10px;
+    margin: 10px;
+}
+
+.experiment9 .image {
+    display: block;
+}
+
+.experiment10 {
+    text-align: center;
+}
+
+.experiment10 .article {
+    margin: 20px auto;
+}
+
+.practic {
+    border-color: #e6e7dd;
+    border-style: dashed;
+    border-width: 1px;
+    padding: 82px 370px;
+    width: 1920px;
+    height: 760px;
+    margin: 10px 0;
+}
+
+.practic h2 {
+    font-family: "Lato";
+    color: #2f302c;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 1.25;
+    text-align: center;
+}
+
+.practic h3 {
+    font-family: "Lato";
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+    color: #2f302c;
+    margin-bottom: 72px;
+}
+
+.practic p {
+    font-family: "Lato";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+    color: #7e7f7c;
+}
+
+.section {
+    max-width: 1180px;
+    margin: 72px auto 0;
+}
+
+.box1,
+.box2 {
+    font-size: 0;
+    margin-left: -34px;
+    margin-right: -34px;
+}
+
+.card {
+    display: inline-block;
+    width: 33.333%;
+    padding-left: 34px;
+    padding-right: 34px;
+}
+
+.content {
+    width: 348px;
+    height: 208px;
+    text-align: center;
+}
+
+.card img,
+.card h3 {
+    margin-bottom: 24px;
+}
+
+.box1 {
+    margin-bottom: 68px;
+}
+
+/*.box1,
+.box2 {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+*/
