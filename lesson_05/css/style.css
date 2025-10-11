@@ -209,7 +209,7 @@ body {
     border-style: dashed;
     border-width: 1px;
     padding: 82px 370px;
-    width: 1920px;
+    max-width: 1920px;
     height: 760px;
     margin: 10px 0;
 }
@@ -260,9 +260,14 @@ body {
 }
 
 .content {
-    width: 348px;
+    max-width: 348px;
     height: 208px;
     text-align: center;
+}
+
+.card img {
+    max-width: 60px;
+    max-height: 60px;
 }
 
 .card img,
@@ -273,10 +278,3 @@ body {
 .box1 {
     margin-bottom: 68px;
 }
-
-/*.box1,
-.box2 {
-    max-width: 1180px;
-    margin: 0 auto;
-}
-*/
