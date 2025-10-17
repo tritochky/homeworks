@@ -208,13 +208,18 @@ body {
     border-color: #e6e7dd;
     border-style: dashed;
     border-width: 1px;
-    padding: 82px 370px;
+    padding: 82px 0;
     max-width: 1920px;
     min-height: 760px;
     margin: 10px 0;
 }
 
-.practic h2 {
+.container {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.container h2 {
     font-family: "Lato";
     color: #2f302c;
     font-weight: 800;
@@ -224,26 +229,9 @@ body {
     margin-bottom: 72px;
 }
 
-.practic h3 {
-    font-family: "Lato";
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.25;
-    color: #2f302c;
-}
-
-.practic p {
-    font-family: "Lato";
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.25;
-    color: #7e7f7c;
-}
-
 .section {
-    max-width: 1180px;
     font-size: 0;
-    margin: -34px;
+    margin: 0 -34px;
 }
 
 .card {
@@ -253,6 +241,22 @@ body {
     text-align: center;
     vertical-align: top;
     padding: 34px;
+}
+
+.card h3 {
+    font-family: "Lato";
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+    color: #2f302c;
+}
+
+.card p {
+    font-family: "Lato";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+    color: #7e7f7c;
 }
 
 .card img {
