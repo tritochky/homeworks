@@ -12,8 +12,9 @@ body {
 }
 
 .main-title {
-    font-family: "holos", serif;
+    font-family: "Lato";
     font-size: 32px;
+    font-weight: bold;
     color: #dc143c;
     text-align: center;
     text-shadow: 3px 3px 5px rgba(255, 0, 170, 0.507);
@@ -24,6 +25,7 @@ body {
 .title {
     font-family: "Tektur", sans-serif;
     font-size: 28px;
+    font-weight: 500;
     font-style: italic;
     text-decoration: underline;
     text-decoration-color: rgb(255, 0, 170);
