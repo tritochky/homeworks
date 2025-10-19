@@ -381,13 +381,13 @@ h2.task {
     font-size: 96px;
     line-height: 104%; /* 100/96 */
     font-weight: 800;
+    text-transform: uppercase;
     color: #2f302c;
     margin-bottom: 16px;
 }
 
 .content span {
     font-weight: 700;
-    color: #2f302c;
 }
 
 .line {
@@ -448,3 +448,4 @@ h2.task {
 footer {
     margin-top: 20px;
 }
+
