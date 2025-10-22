@@ -1,0 +1,350 @@
+@import url("reset.css");
+@import url("fonts.css");
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+}
+
+.navigation {
+    display: inline-block;
+    margin: 0 30px;
+    padding: 10px;
+    background-color: hsl(61, 94%, 50%);
+}
+
+h2.task,
+.main-title {
+    font-family: "Montserrat";
+    font-size: 42px;
+    font-weight: 800;
+    color: #dc143c;
+    text-align: center;
+    text-shadow: 3px 3px 5px rgba(255, 0, 170, 0.507);
+    line-height: 1.8;
+    letter-spacing: 7px;
+}
+
+.title {
+    font-family: "Lato", sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    font-style: italic;
+    text-decoration: underline;
+    text-decoration-color: rgb(255, 0, 170);
+}
+
+.link {
+    color: rgb(27, 141, 218);
+    margin-left: 30px;
+}
+
+h2 {
+    margin: 10px;
+}
+
+h2,
+.facade {
+    padding: 30px;
+}
+
+.title span {
+    color: #0ead78;
+}
+
+.facade {
+    max-width: 200px;
+    min-height: 200px;
+    height: 100%;
+    border: 2px solid rgb(73, 63, 63);
+    background-color: #3ad676;
+}
+
+.card {
+    display: inline-block;
+    vertical-align: top;
+    margin: 20px 40px;
+}
+
+.experiment1 .inner-link:hover,
+.experiment2 .inner-link:hover,
+.experiment3 .inner-link:hover,
+.experiment4 .inner-link:hover,
+.experiment5 .inner-link:hover {
+    color: rgb(17, 108, 168);
+    text-decoration: underline;
+}
+
+.inner-link:hover .sentence1 {
+    color: #c05142;
+}
+
+.inner-link .sentence2:hover {
+    color: rgb(13, 231, 231);
+}
+
+.experiment2 .article {
+    margin-left: 40px;
+}
+
+.experiment2 .inner-link:active {
+    color: #e90b37;
+}
+
+.experiment3 .inner-link:visited {
+    color: #a099dd15;
+}
+
+.interaction1:focus {
+    outline: 1px solid rgba(255, 0, 170, 0.507);
+}
+
+.interaction2:focus-visible {
+    outline: 2px solid rgba(255, 0, 170, 0.507);
+}
+
+.block {
+    display: none;
+    width: 200px;
+    background-image: url(../img/surprise.jpg);
+    background-size: 200px;
+}
+
+.block:target {
+    display: inline-block;
+}
+
+.wrapper {
+    max-width: 200px;
+    padding: 0;
+}
+
+.wrapper .facade {
+    margin: 5px 0;
+}
+
+#item span {
+    display: inline-block;
+}
+
+#item > *:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.article1 p:first-child,
+.article2 p:first-of-type,
+.article3 p:last-child,
+.article4 p:last-of-type,
+.article5 p:nth-child(2),
+.article6 p:nth-of-type(2),
+.article7 p:nth-child(odd),
+.article8 p:nth-of-type(even),
+.article9 p:nth-child(3n),
+.article10 p:nth-of-type(3n + 1),
+.article11 p:nth-child(4n + 2),
+.article11 p:nth-of-type(4n + 5),
+.article12:not(.facade),
+.article13:has(span) {
+    color: #c05142;
+}
+
+.experiment7 .article {
+    max-width: 350px;
+    min-height: 200px;
+    height: 100%;
+    border: 2px solid rgb(73, 63, 63);
+    background-color: #3ad676;
+    padding: 40px;
+}
+
+.list-title {
+    display: inline-block;
+    font-family: "Montserrat";
+    font-size: 20px;
+    font-weight: 600;
+    color: #1f0309;
+    margin-left: -15px;
+    margin-bottom: 20px;
+}
+
+.list-item::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    border-radius: 50%;
+    background-color: rgb(224, 229, 233);
+    margin-right: 10px;
+    margin-left: -30px;
+}
+
+.list-item {
+    line-height: 1.2;
+    margin-left: 20px;
+}
+
+.list-title::after {
+    content: "";
+    height: 2px;
+    display: block;
+    background-color: #be0c33;
+    width: 70%;
+    margin-top: 5px;
+    opacity: 0;
+}
+
+.list-title:hover::after {
+    opacity: 1;
+}
+
+h2.task {
+    text-decoration: none;
+}
+
+.clauses {
+    max-width: 350px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    border: 1px solid rgb(253, 251, 251);
+    border-radius: 8px;
+    box-shadow: 0 13px 19px 0 rgba(0, 0, 0, 0.07);
+    background: #ffffff;
+}
+.clauses .list {
+    padding: 16px 0;
+    min-width: 270px;
+    height: 100%;
+    max-height: 268px;
+    margin-bottom: -15px;
+}
+
+.text {
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 171%;
+    letter-spacing: 0.01em;
+    color: #252b42;
+    margin: 0 0 15px 30px;
+    padding-left: 42px;
+}
+
+.clause-up::before {
+    content: "";
+    background: url(../img/check.svg);
+}
+
+.clause-out::before {
+    content: "";
+    background: url(../img/check-out.png);
+}
+
+.clause-up::before,
+.clause-out::before {
+    content: "";
+    vertical-align: middle;
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+    margin-left: -42px;
+}
+
+.game {
+    max-width: 1000px;
+    height: 700px;
+    margin: 0 auto 20px;
+    border: 2px solid rgb(73, 63, 63);
+    background:
+        url(../img/butterfly.png) 30px 450px / 120px no-repeat,
+        url(../img/camomile.jpg) center / cover no-repeat;
+}
+
+.game-block {
+    background-color: #3ad676;
+    border: 2px solid #d6a5a5;
+    border-radius: 4px;
+    visibility: hidden;
+}
+
+.block1 {
+    width: 20px;
+    height: 20px;
+    margin-left: 75px;
+    margin-top: 430px;
+    visibility: visible;
+}
+
+.block2 {
+    display: block;
+    width: 20px;
+    height: 60px;
+    margin-left: 75px;
+    margin-top: -80px;
+}
+
+.block3 {
+    display: block;
+    width: 200px;
+    height: 20px;
+    margin-left: 75px;
+    margin-top: -80px;
+}
+
+.block4 {
+    display: block;
+    width: 10px;
+    height: 80px;
+    margin-left: 275px;
+    margin-top: -80px;
+}
+
+.block5 {
+    display: block;
+    width: 300px;
+    height: 30px;
+    margin-left: 275px;
+    margin-top: -110px;
+}
+
+.block6 {
+    display: block;
+    width: 20px;
+    height: 60px;
+    margin-left: 555px;
+    margin-top: -90px;
+}
+
+.block7 {
+    display: block;
+    width: 140px;
+    height: 50px;
+    margin-left: 555px;
+    margin-top: -110px;
+}
+
+.block8 {
+    display: block;
+    width: 120px;
+    height: 120px;
+    margin-left: 685px;
+    margin-top: -100px;
+    padding: 15px;
+    opacity: 0;
+}
+
+.block7 p {
+    padding: 5px;
+    text-align: center;
+}
+
+.game-block:hover + .game-block,
+.game-block:hover {
+    visibility: visible;
+}
+
+.block8:hover {
+    opacity: 1;
+}
+footer {
+    padding: 20px;
+}

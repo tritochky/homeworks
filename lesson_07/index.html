@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="zxx">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Homework_07</title>
+    </head>
+    <body>
+        <header>
+            <a class="navigation link" href="#exp">Експерименти</a>
+            <a class="navigation link" href="#pract">Практика</a>
+            <a class="navigation link" href="#game">Гра</a>
+        </header>
+        <main>
+            <div id="up">
+                <h1 id="exp" class="main-title">Експерименти</h1>
+                <div class="experiment1">
+                    <h2 class="title">Експеримент 1: <span> :hover.</span></h2>
+                    <div class="card facade">
+                        <a href="#" class="inner-link">Змінює колір при
+                            наведенні
+                            миші.</a>
+                    </div>
+                    <div class="card facade">
+                        <a href="#" class="inner-link">Тут посилання має span,
+                            <span
+                                class="sentence1">
+                                який
+                                при наведенні на лінк
+                                виглядає інакше</span></a>
+                    </div>
+                    <div class="card facade">
+                        <a href="#" class="inner-link">Тут посилання має span,
+                            <span
+                                class="sentence2">
+                                який виглядає інакше тільки при наведенні на
+                                span</span></a>
+                    </div>
+                </div>
+                <div class="experiment2">
+                    <h2 class="title">Експеримент 2: <span> :active.</span></h2>
+                    <div class="article facade">
+                        <a href="#" class="inner-link">
+                            Посилання змінює колір при натисканні на нього</a>
+                    </div>
+                </div>
+                <div class="experiment3">
+                    <h2 class="title">Експеримент 3: <span>
+                            :visited.</span></h2>
+                    <div class="facade card">
+                        <a class="inner-link"
+                            href="https://www.shchos-tsikave.ua/?srsltid=AfmBOooi4jaaa7SrOTiQUzYZc96-WvhZbg9TAWNYRluG_GlawuElZG9o">Відвідане
+                            посилання
+                            змінює колір, наприклад, як
+                            тут</a>
+                    </div>
+                    <div class="facade card">
+                        <a class="inner-link"
+                            href="https://www.facebook.com/reg/?locale=uk_UA">Тут
+                            ще не був</a>
+                    </div>
+                </div>
+                <div class="experiment4">
+                    <h2 class="title">Експеримент 4: <span> :focus</span> та
+                        <span>
+                            :focus-visible.</span></h2>
+                    <div class="facade card">
+                        <a href="#" class="inner-link interaction1">Присутній
+                            при
+                            будь-якій
+                            взаємодії з об'єктом, мишею чи клавішею</a>
+                    </div>
+                    <div class="facade card">
+                        <a href="#" class="inner-link interaction2">Виникає
+                            тільки
+                            тоді, коли на
+                            об'єкт
+                            переходимо клавішею TAB</a>
+                    </div>
+                </div>
+                <div class="experiment5">
+                    <h2 class="title">Експеримент 5: <span> :target.</span></h2>
+                    <div class="facade card">
+                        <a href="#gift" class="inner-link">Посилання на
+                            сюрприз</a>
+                    </div>
+                    <div class="facade card block" id="gift">
+                    </div>
+                </div>
+                <div class="experiment6">
+                    <h2 class="title">Експеримент 6: псевдокласи положення у
+                        коді.</h2>
+                    <div class="wrapper card">
+                        <div class="article1 facade" id="item">
+                            <p>:first-child <br>Звертання до першого дочірнього
+                                елементу в коді - тегу р. </p>
+                            <p>Fugit corporis eum nostrum temporibus aperiam
+                                impedit.</p>
+                            <p>Fugit corporis eum nostrum temporibus aperiam
+                                impedit.</p>
+                        </div>
+                        <div class="article2 facade" id="item">
+                            <span>Це тег span.</span>
+                            <p>:first-of-type <br>Звертання до першого вказаного
+                                об'єкту в коді - тегу р. </p>
+                            <p>Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <div class="wrapper card">
+                        <div class="article3 facade" id="item">
+                            <p>Fugit corporis eum nostrum temporibus aperiam
+                                impedit.</p>
+                            <p>Lorem ipsum dolor sit amet eum nostrum
+                                consectetur
+                                adipisicing elit.</p>
+                            <p>:last-child <br>Звернення до останнього
+                                дочірнього елементу в коді - тегу р</p>
+                        </div>
+                        <div class="article4 facade" id="item">
+                            <p>Fugit corporis eum nostrum temporibus
+                                impedit. </p>
+                            <p>:last-of-type <br> Звертання до останнього
+                                вказаного
+                                об'єкту в коді - тегу р.</p>
+                            <span>А це тег span.</span>
+                        </div>
+                    </div>
+                    <div class="wrapper card">
+                        <div class="article5 facade" id="item">
+                            <span>Це тег span.</span>
+                            <p>:nth-child(2) <br> Шукає елемент за номером (в
+                                данному випадку №2)
+                                незалежно від назви
+                                тегу. Це перший тег р.</p>
+                            <p>А це другий тег р...</p>
+                        </div>
+                        <div class="article6 facade" id="item">
+                            <span>Це все ще тег span.</span>
+                            <p>А це перший тег р.</p>
+                            <p>:nth-of-type(2) <br>Шукає вказаний селектор за
+                                номером (в данному випадку №2). І так, це другий
+                                тег р. </p>
+                            <p>Lorem ipsum.</p>
+                        </div>
+                    </div>
+                    <div class="article7 facade card" id="item">
+                        <p>:nth-child(odd) <br>Змінює всі непарні дочірні
+                            елементи </p>
+                        <p>Fugit corporis eum nostrum temporibus aperiam
+                            impedit.</p>
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit.</p>
+                        <p>Fugit corporis eum nostrum temporibus aperiam
+                            impedit.</p>
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit.</p>
+                        <p>Fugit corporis eum nostrum temporibus aperiam
+                            impedit.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit.</p>
+                    </div>
+                    <div class="article8 facade card" id="item">
+                        <p>Fugit corporis eum nostrum temporibus aperiam
+                            impedit.</p>
+                        <p>:nth-of-type(even) <br>Змінює всі парні конкретні
+                            теги. </p>
+                        <p> Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit.</p>
+                        <p>Fugit corporis eum nostrum temporibus aperiam
+                            impedit.</p>
+                        <p> Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit.</p>
+                        <p>Fugit corporis eum nostrum temporibus aperiam
+                            impedit.</p>
+                        <p>Lorem ipsum dolor sit amet
+                            adipisicing elit.</p>
+                    </div>
+                    <div class="article9 facade card" id="item">
+                        <p>Fugit corporis eum nostrum temporibus aperiam
+                            impedit.</p>
+                        <p>Fugit corporis eum nostrum temporibus aperiam
+                            impedit.</p>
+                        <p>:nth-child(3n) <br>Змінює кожен 3-й дочірній елемент.
+                        </p>
+                        <p>Fugit corporis eum nostrum temporibus aperiam
+                            impedit.</p>
+                        <p> Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit.</p>
+                        <p>Fugit corporis eum nostrum temporibus
+                            impedit.</p>
+                        <p>Fugit corporis eum nostrum temporibus aperiam
+                            impedit.</p>
+                    </div>
+                    <div class="article10 facade card" id="item">
+                        <p>:nth-of-type(3n + 1) <br>Також змінює кожен 3-й
+                            конкретний тег, але
+                            починаючі з першого. </p>
+                        <p>Fugit corporis eum nostrum temporibus aperiam
+                            impedit.</p>
+                        <p> Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit.</p>
+                        <p>Fugit corporis eum nostrum temporibus aperiam
+                            impedit.</p>
+                        <p> Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit.</p>
+                        <p>Fugit corporis eum nostrum temporibus aperiam
+                            impedit.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit.</p>
+                        <p>Fugit corporis eum nostrum temporibus aperiam
+                            impedit.</p>
+                    </div>
+                    <div class="article11 facade card" id="item">
+                        <p>Fugit corporis eum nostrum temporibus aperiam
+                            impedit.</p>
+                        <p>:nth-child(4n + 2) <br>Змінює кожен 4-й дочірній
+                            елемент, починаючи з 2-го.</p>
+                        <p> Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit.</p>
+                        <p>Fugit corporis eum nostrum temporibus aperiam
+                            impedit.</p>
+                        <p>:nth-of-type(4n + 5) <br>Також змінює кожен 4-й
+                            конкретний тег, але
+                            починаючі з 5-го. </p>
+                        <p>Fugit corporis eum nostrum temporibus aperiam
+                            impedit.</p>
+                        <p>Lorem ipsum dolor sit amet
+                            adipisicing</p>
+                        <p>Fugit corporis eum aperiam
+                            impedit.</p>
+                    </div>
+                    <div class="wrapper  card">
+                        <div class="article12 facade" id="item">
+                            <p>:not(selector)</p>
+                            <p>Псевдоклас виключення. Застосовує вказані стилі,
+                                якщо об'єкт не має селектора в дужках. </p>
+                            <p> В данному випадку стилі не застосувалися, бо
+                                об'єкт
+                                з класом .article12 має таки ще клас, вказаний в
+                                дужках псевдокласу :not.</p>
+                        </div>
+                        <div class="article13 facade" id="item">
+                            <p>:has(span) <br>Псевдоклас присутності. Стилі
+                                застосовуються, бо об'єкт має "дитину", вказану
+                                в дужках.</p>
+                            <p>Fugit corporis eum nostrum
+                                impedit.</p>
+                            <span>Це тег span...</span>
+                            <p>Fugit corporis eum nostrum
+                                impedit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="experiment7">
+                    <h2 class="title">Експеримент 7: псевдоелементи
+                        <span>::before</span> та
+                        <span>::after.</span></h2>
+                    <div class="article card">
+                        <h3 class="list-title">Тут використаний ::after.</h3>
+                        <ul class="list" id="item">
+                            <li class="list-item">Тут використаний псевдоелемент
+                                ::before.</li>
+                            <li class="list-item">Lorem ipsum dolor sit.</li>
+                            <li class="list-item">Lorem ipsum dolor sit.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <a class="link" href="#up">Наверх</a>
+            <h2 class="title task" id="pract"> Практика</h2>
+            <div class="clauses">
+                <ul class="list">
+                    <li class="clause-up text">
+                        Unlimited product updates
+                    </li>
+                    <li class="clause-up text">
+                        Unlimited product
+                    </li>
+                    <li class="clause-up text">
+                        Unlimited product
+                    </li>
+                    <li class="clause-out text">
+                        1GB Cloud storage
+                    </li>
+                    <li class="clause-out text">
+                        Email and community support
+                    </li>
+                </ul>
+            </div>
+            <a class="link" href="#up">Наверх</a>
+            <h2 class="title task" id="game">Гра</h2>
+            <div class="game">
+                <div class="game-block block1"></div>
+                <div class="game-block block2"></div>
+                <div class="game-block block3"></div>
+                <div class="game-block block4"></div>
+                <div class="game-block block5"></div>
+                <div class="game-block block6"></div>
+                <div class="game-block block7"><p>Доведи до кінця</p></div>
+                <div class="block8">
+                    <img src="img/butterfly.png"
+                        alt="Різнокольоровий метелик з великими вусами">
+                </div>
+            </div>
+            <a class="link" href="#up">Наверх</a>
+        </main>
+        <footer>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        </footer>
+    </body>
+</html>
