@@ -1,0 +1,77 @@
+@import url("reset.css");
+@import url("fonts.css");
+
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.footer,
+.partners,
+.promo,
+.header {
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+}
+
+.hero {
+    padding-top: 114px;
+    padding-bottom: 110px;
+    background:
+        url(../img/hero-banner.jpg) left center / cover no-repeat,
+        #d9d9d9;
+    /* margin-bottom: 82px; */
+}
+
+.hero__content {
+    max-width: 1392px;
+    margin: 0 auto;
+}
+
+.content__info {
+    max-width: 650px;
+    margin-left: auto;
+    font-family: Lato, sans-serif;
+    color: #2f302c;
+}
+
+.content__info h2 {
+    padding: 0;
+    margin: 0 0 20px 5px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.content__info h1 {
+    margin-bottom: 52px;
+    font-family: Montserrat, sans-serif;
+    font-size: 96px;
+    font-weight: 700;
+    line-height: 1.04;
+}
+
+.content__info span {
+    font-weight: 800;
+}
+
+.content__info h1::after {
+    content: "";
+    height: 1px;
+    display: block;
+    background-color: #2f302c;
+    width: 47.5%;
+    margin-top: 16px;
+    margin-left: 10px;
+}
+
+.content__info p {
+    max-width: 374px;
+    font-size: 16px;
+    margin-left: 5px;
+    font-weight: 500;
+    line-height: 1.25;
+    color: #7e7f7c;
+}
