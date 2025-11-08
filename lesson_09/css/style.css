@@ -22,22 +22,21 @@ body {
     background:
         url(../img/hero-banner.jpg) left center / cover no-repeat,
         #d9d9d9;
-    /* margin-bottom: 82px; */
 }
 
-.hero__content {
+.hero__container {
     max-width: 1392px;
     margin: 0 auto;
 }
 
-.content__info {
+.hero__info {
     max-width: 650px;
     margin-left: auto;
     font-family: Lato, sans-serif;
     color: #2f302c;
 }
 
-.content__info h2 {
+.hero__info h2 {
     padding: 0;
     margin: 0 0 20px 5px;
     font-size: 20px;
@@ -45,7 +44,7 @@ body {
     line-height: 1.4;
 }
 
-.content__info h1 {
+.hero__info h1 {
     margin-bottom: 52px;
     font-family: Montserrat, sans-serif;
     font-size: 96px;
@@ -53,11 +52,11 @@ body {
     line-height: 1.04;
 }
 
-.content__info span {
+.hero__info span {
     font-weight: 800;
 }
 
-.content__info h1::after {
+.hero__info h1::after {
     content: "";
     height: 1px;
     display: block;
@@ -67,7 +66,7 @@ body {
     margin-left: 10px;
 }
 
-.content__info p {
+.hero__info p {
     max-width: 374px;
     font-size: 16px;
     margin-left: 5px;
