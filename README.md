@@ -6,3 +6,4 @@
 6. Homework No7 https://tritochky.github.io/homeworks/lesson_07/
 7. Homework No8 https://tritochky.github.io/homeworks/lesson_08/
 8. Homework No9 https://tritochky.github.io/homeworks/lesson_09/
+9. Homework No10 https://tritochky.github.io/homeworks/lesson_10/
