@@ -1,0 +1,234 @@
+@import url("reset.css");
+@import url("fonts.css");
+
+body {
+    font-family: "Playfair Display", sans-serif;
+    font-size: 18px;
+}
+
+.footer,
+.header {
+    background-color: hsl(98, 61%, 76%);
+}
+
+.experiments,
+.task,
+.footer,
+.header {
+    padding: 10px;
+}
+
+[class*="__wrapper"] {
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+[class*="__block"] p,
+.header__navigation {
+    text-align: center;
+}
+
+.header__link:not(:last-child) {
+    margin-right: 200px;
+}
+
+[class*="__link"] {
+    color: rgb(27, 141, 218);
+    padding: 20px 0;
+}
+
+.footer__container p,
+[class*="__link"]:not(.header__link) {
+    margin-left: 30px;
+}
+
+.task h2,
+h1 {
+    font-family: "Montserrat";
+    font-size: 42px;
+    font-weight: 800;
+    color: #dc143c;
+    text-align: center;
+    text-shadow: 3px 3px 5px rgba(255, 0, 170, 0.507);
+    line-height: 1.8;
+    letter-spacing: 7px;
+}
+
+[class*="__title"] {
+    font-family: "Montserrat", sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    font-style: italic;
+    text-decoration: underline;
+    text-decoration-color: rgb(255, 0, 170);
+}
+
+h2 {
+    margin: 10px;
+    padding: 30px;
+}
+
+[class*="__title"] span {
+    color: #0ead78;
+}
+
+.task__clauses,
+[class*="__wrapper"] {
+    margin-bottom: 30px;
+}
+
+[class*="__block"] {
+    max-width: 1000px;
+    min-height: 100px;
+    border: 2px solid rgb(73, 63, 63);
+    border-radius: 20px;
+}
+
+[class*="--red"] {
+    background-color: #a7364d;
+}
+
+[class*="--yellow"] {
+    background-color: rgb(238, 216, 21);
+}
+
+[class*="--green"] {
+    background-color: rgb(27, 148, 73);
+}
+
+[class*="--grey"] {
+    background-color: rgb(153, 160, 155);
+}
+
+[class*="__block"] p {
+    margin-top: 30px;
+}
+
+.first-experiment__block--yellow {
+    position: relative;
+    top: 30px;
+    left: 40px;
+}
+
+.first-experiment__block--green {
+    position: relative;
+    right: 10%;
+}
+
+.first-experiment__block--green p {
+    margin-left: 80px;
+}
+
+[class*="-experiment__block--yellow"] {
+    position: relative;
+    bottom: 25px;
+    left: 60px;
+    z-index: 2;
+}
+
+.second-experiment__block--green {
+    min-height: 150px;
+    position: relative;
+    bottom: 150px;
+    right: 10px;
+    z-index: -2;
+}
+
+.second-experiment__block--grey {
+    min-height: 150px;
+    position: relative;
+    bottom: 215px;
+    left: 40px;
+    z-index: 1;
+    line-height: 40px;
+}
+
+.second-experiment__block--grey span {
+    color: #0a6d13;
+}
+
+.fourth-experiment__block--green p,
+.third-experiment__block--yellow p {
+    margin: 0;
+}
+
+.third-experiment__block--green span {
+    color: rgb(241, 238, 7);
+}
+
+.third-experiment__wrapper--relative {
+    position: relative;
+}
+
+[class*="--litle"] {
+    max-width: 200px;
+    padding: 10px;
+}
+
+.third-experiment__block--position {
+    position: absolute;
+    top: 60px;
+    left: 60px;
+    /* height: 130px; */
+}
+
+.third-experiment__block--absolute {
+    position: absolute;
+    top: 5%;
+    left: 3%;
+}
+
+.fourth-experiment__block--green {
+    position: fixed;
+    top: 20px;
+    right: 40px;
+}
+
+.task__clauses {
+    max-width: 350px;
+    margin: 0 auto;
+    /* margin-bottom: 30px; */
+    border: 1px solid rgb(253, 251, 251);
+    border-radius: 8px;
+    box-shadow: 0 13px 19px 0 rgba(0, 0, 0, 0.07);
+    background: #ffffff;
+}
+
+.task__clauses .clauses__list {
+    padding: 16px 0;
+    min-width: 270px;
+    height: 100%;
+    max-height: 268px;
+    margin-bottom: -15px;
+}
+
+.clauses__item {
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 171%;
+    letter-spacing: 0.01em;
+    color: #252b42;
+    margin: 0 0 15px 30px;
+    padding-left: 42px;
+}
+
+.clauses__item--up::before {
+    content: "";
+    background: url(../img/check.svg);
+}
+
+.clauses__item--out::before {
+    content: "";
+    background: url(../img/check-out.svg);
+}
+
+.clauses__item--up::before,
+.clauses__item--out::before {
+    content: "";
+    vertical-align: middle;
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+    margin-left: -42px;
+}
