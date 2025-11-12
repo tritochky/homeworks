@@ -15,168 +15,557 @@
         <title>Homework_10</title>
     </head>
     <body>
-        <header class="header">
-            <div class="header__navigation">
-                <a class="header__link" href="#exp">Експерименти</a>
-                <a class="header__link" href="#pract">Практика</a>
-            </div>
-        </header>
-        <main>
-            <div class="experiments" id="up">
-                <h1 id="exp">Експерименти</h1>
-                <div class="experiments__item first-experiment">
-                    <h2 class="first-experiment__title">Експеримент 1: <span>
-                            position: relative.</span></h2>
-                    <div class="first-experiment__wrapper">
-                        <div
-                            class="first-experiment__block first-experiment__block--red"><p>Нікуди
-                                не рухається, бо має за замовчунням position:
-                                static</p>
-                        </div>
-                        <div
-                            class="first-experiment__block first-experiment__block--yellow">
-                            <p>Перемістився
-                                відносно свого положення на 30px вниз та
-                                на 40px праворуч</p>
-                        </div>
-                        <div
-                            class="first-experiment__block first-experiment__block--green"><p>Перемістився
-                                ліворуч
-                                на 10% від ширини батьківського елементу.
-                                Розташований нижче по коду, тому
-                                ближчий до користувача</p>
-                        </div>
+        <div class="wrapper" id="up">
+            <header class="header">
+                <div class="header__container">
+                    <div class="menu">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a
+                                    class="menu__link"
+                                    href="#exp">Експерименти</a>
+                                <ul class="menu__submenu submenu">
+                                    <li class="submenu__item">
+                                        <a
+                                            class="submenu__link submenu__link--none-margin"
+                                            href="#relative">Position:
+                                            relative</a></li>
+                                    <li
+                                        class="submenu__item"><a
+                                            class="submenu__link submenu__link--none-margin"
+                                            href="#index">Z-index</a></li>
+                                    <li class="submenu__item"><a
+                                            class="submenu__link submenu__link--none-margin"
+                                            href="#absolute">Position:
+                                            absolute</a></li>
+                                    <li class="submenu__item"><a
+                                            class="submenu__link submenu__link--none-margin"
+                                            href="#fixed">Position:
+                                            fixed</a></li>
+                                    <li class="submenu__item"><a
+                                            class="submenu__link submenu__link--none-margin"
+                                            href="#sticky">Position:
+                                            sticky</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu__item">
+                                <a
+                                    class="menu__link"
+                                    href="#pract">Практика</a>
+                                <ul class="menu__submenu submenu">
+                                    <li class="submenu__item"><a
+                                            class="submenu__link submenu__link--none-margin"
+                                            href="#clauses">Task 1</a></li>
+                                    <li class="submenu__item"><a
+                                            class="submenu__link submenu__link--none-margin"
+                                            href="#cards">Task
+                                            2</a>
+                                        <ul
+                                            class="submenu__sub-submenu sub-submenu">
+                                            <li
+                                                class="sub-submenu__item"><a
+                                                    class="sub-submenu__link sub-submenu__link--none-margin"
+                                                    href="#cleanser">Cleansers</a></li>
+                                            <li
+                                                class="sub-submenu__item"><a
+                                                    class="sub-submenu__link sub-submenu__link--none-margin"
+                                                    href="#patches">Eye
+                                                    Patches</a></li>
+                                            <li
+                                                class="sub-submenu__item"><a
+                                                    class="sub-submenu__link sub-submenu__link--none-margin"
+                                                    href="#mask">Мasks</a></li>
+                                        </ul></li>
+                                </ul>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-                <div class="experiments__item second-experiment">
-                    <h2 class="second-experiment__title">Експеримент 2:
-                        демонстрація поведінки блоків в залежності від значення
-                        <span>
-                            z-index.</span></h2>
-                    <div class="second-experiment__wrapper">
-                        <div
-                            class="second-experiment__block second-experiment__block--red"><p>Нікуди
-                                не рухається, бо має за замовчунням position:
-                                static та не має z-index</p>
-                        </div>
-                        <div
-                            class="second-experiment__block second-experiment__block--yellow">
-                            <p>Перемістився
-                                відносно свого положення на 25px вгору та
-                                на 60px праворуч. Розташований в коді вище за
-                                сірий блок, але має більший z-index, тому
-                                ближчий до
-                                користувача</p>
-                        </div>
-                        <div
-                            class="second-experiment__block second-experiment__block--green">
-                        </div>
-                        <div
-                            class="second-experiment__block second-experiment__block--grey"><p>Перемістився
-                                праворуч
-                                на 40рх та вгору на 215рх. Мав би закрити жовтий
-                                блок, але має менший z-index. <br><span>Зелений
-                                    блок перемістився на 150рх вгору та на 10рх
-                                    ліворуч, але сховався за всі блоки,
-                                    бо має від'ємний
-                                    z-index</span></p>
+            </header>
+            <main>
+                <div class="experiments">
+                    <h1 id="exp">Експерименти</h1>
+                    <div class="experiments__item first-experiment">
+                        <h2 class="first-experiment__title"
+                            id="relative">Експеримент 1:
+                            <span>
+                                position: relative.</span></h2>
+                        <div class="first-experiment__wrapper">
+                            <div
+                                class="first-experiment__block first-experiment__block--red"><p>Нікуди
+                                    не рухається, бо має за замовчунням
+                                    position:
+                                    static</p>
+                            </div>
+                            <div
+                                class="first-experiment__block first-experiment__block--yellow">
+                                <p>Перемістився
+                                    відносно свого положення на 30px вниз та
+                                    на 40px праворуч</p>
+                            </div>
+                            <div
+                                class="first-experiment__block first-experiment__block--green"><p>Перемістився
+                                    ліворуч
+                                    на 10% від ширини батьківського елементу.
+                                    Розташований нижче по коду, тому
+                                    ближчий до користувача</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="experiments__item third-experiment">
-                    <h2 class="third-experiment__title">Експеримент 3: <span>
-                            position: absolute.</span></h2>
-                    <div class="third-experiment__wrapper">
-                        <div
-                            class="third-experiment__block third-experiment__block--red"><p>Нікуди
-                                не рухається, бо має за замовчунням position:
-                                static</p>
-                        </div>
-                        <div
-                            class="third-experiment__block third-experiment__block--yellow third-experiment__block--position third-experiment__block--litle">
-                            <p>Має position: absolute та позиціонується в даному
-                                випадку відносно body</p>
-                        </div>
-                        <div
-                            class="third-experiment__block third-experiment__block--green"><p>Нікуди
-                                не рухається, бо має за замовчунням position:
-                                static. Але між ними був <span>жовтий
-                                    блок</span>, який має
-                                position: absolute та позиціонується відносно
-                                body</p>
-                        </div>
-                    </div>
-                    <div
-                        class="third-experiment__wrapper third-experiment__wrapper--relative">
-                        <div
-                            class="third-experiment__block third-experiment__block--red"><p>Нікуди
-                                не рухається, бо має за замовчунням position:
-                                static</p>
-                        </div>
-                        <div
-                            class="third-experiment__block third-experiment__block--yellow third-experiment__block--absolute third-experiment__block--litle">
-                            <p>Має position: absolute та позиціонується в даному
-                                випадку відносно батьківського елемента</p>
-                        </div>
-                        <div
-                            class="third-experiment__block third-experiment__block--green"><p>Нікуди
-                                не рухається, бо має за замовчунням position:
-                                static</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="experiments__item fourth-experiment">
-                    <h2 class="fourth-experiment__title">Експеримент 4: <span>
-                            position: fixed.</span></h2>
-                    <div class="fourth-experiment__wrapper">
-                        <div
-                            class="fourth-experiment__block fourth-experiment__block--red"><p>Нікуди
-                                не рухається, бо має за замовчунням position:
-                                static</p>
-                        </div>
-                        <div
-                            class="fourth-experiment__block fourth-experiment__block--yellow">
-                            <p>Має position: relative та z-index: 2</p>
-                        </div>
-                        <div
-                            class="fourth-experiment__block fourth-experiment__block--green fourth-experiment__block--litle"><p>Нікуди
-                                не рухається, бо має position:
-                                fixed</p>
+                    <div class="experiments__item second-experiment">
+                        <h2 class="second-experiment__title"
+                            id="index">Експеримент 2:
+                            демонстрація поведінки блоків в залежності від
+                            значення
+                            <span>
+                                z-index.</span></h2>
+                        <div class="second-experiment__wrapper">
+                            <div
+                                class="second-experiment__block second-experiment__block--red"><p>Нікуди
+                                    не рухається, бо має за замовчунням
+                                    position:
+                                    static та не має z-index</p>
+                            </div>
+                            <div
+                                class="second-experiment__block second-experiment__block--yellow">
+                                <p>Перемістився
+                                    відносно свого положення на 25px вгору та
+                                    на 60px праворуч. Розташований в коді вище
+                                    за
+                                    сірий блок, але має більший z-index, тому
+                                    ближчий до
+                                    користувача</p>
+                            </div>
+                            <div
+                                class="second-experiment__block second-experiment__block--green">
+                            </div>
+                            <div
+                                class="second-experiment__block second-experiment__block--grey"><p>Перемістився
+                                    праворуч
+                                    на 40рх та вгору на 215рх. Мав би закрити
+                                    жовтий
+                                    блок, але має менший z-index.
+                                    <br><span>Зелений
+                                        блок перемістився на 150рх вгору та на
+                                        10рх
+                                        ліворуч, але сховався за всі блоки,
+                                        бо має від'ємний
+                                        z-index</span></p>
+                            </div>
                         </div>
                     </div>
+                    <div class="experiments__item third-experiment">
+                        <h2 class="third-experiment__title"
+                            id="absolute">Експеримент 3:
+                            <span>
+                                position: absolute.</span></h2>
+                        <div class="third-experiment__wrapper">
+                            <div
+                                class="third-experiment__block third-experiment__block--red"><p>Нікуди
+                                    не рухається, бо має за замовчунням
+                                    position:
+                                    static</p>
+                            </div>
+                            <div
+                                class="third-experiment__block third-experiment__block--yellow third-experiment__block--position third-experiment__block--litle">
+                                <p>Має position: absolute та позиціонується в
+                                    даному
+                                    випадку відносно body</p>
+                            </div>
+                            <div
+                                class="third-experiment__block third-experiment__block--green"><p>Нікуди
+                                    не рухається, бо має за замовчунням
+                                    position:
+                                    static. Але між ними був <span>жовтий
+                                        блок</span>, який має
+                                    position: absolute та позиціонується
+                                    відносно
+                                    body</p>
+                            </div>
+                        </div>
+                        <div
+                            class="third-experiment__wrapper third-experiment__wrapper--relative">
+                            <div
+                                class="third-experiment__block third-experiment__block--red"><p>Нікуди
+                                    не рухається, бо має за замовчунням
+                                    position:
+                                    static</p>
+                            </div>
+                            <div
+                                class="third-experiment__block third-experiment__block--yellow third-experiment__block--absolute third-experiment__block--litle">
+                                <p>Має position: absolute та позиціонується в
+                                    даному
+                                    випадку відносно батьківського елемента</p>
+                            </div>
+                            <div
+                                class="third-experiment__block third-experiment__block--green"><p>Нікуди
+                                    не рухається, бо має за замовчунням
+                                    position:
+                                    static</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="experiments__item fourth-experiment">
+                        <h2 class="fourth-experiment__title"
+                            id="fixed">Експеримент 4:
+                            <span>
+                                position: fixed.</span></h2>
+                        <div class="fourth-experiment__wrapper">
+                            <div
+                                class="fourth-experiment__block fourth-experiment__block--red"><p>Нікуди
+                                    не рухається, бо має за замовчунням
+                                    position:
+                                    static</p>
+                            </div>
+                            <div
+                                class="fourth-experiment__block fourth-experiment__block--yellow">
+                                <p>Має position: relative та z-index: 2</p>
+                            </div>
+                            <div
+                                class="fourth-experiment__block fourth-experiment__block--green fourth-experiment__block--litle"><p>Нікуди
+                                    не рухається, бо має position:
+                                    fixed</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="experiments__item fifth-experiment">
+                        <h2 class="fifth-experiment__title"
+                            id="sticky">Експеримент 5:
+                            <span>
+                                position: sticky.</span></h2>
+                        <div class="fifth-experiment__wrapper">
+                            <div
+                                class="fifth-experiment__block fifth-experiment__block--red"><p>Починає
+                                    рухатися в середині свого батьківського
+                                    елемента, коли торкається вказаного кордону
+                                    (в
+                                    даному випадку в'юпорта), бо має position:
+                                    sticky</p>
+                            </div>
+                            <div class="fifth-experiment__text">Lorem ipsum
+                                dolor,
+                                sit amet consectetur adipisicing elit. Corrupti
+                                fugit reprehenderit accusamus quos suscipit!
+                                Fuga
+                                velit, excepturi iure architecto laudantium
+                                labore
+                                tenetur veritatis numquam maiores rerum
+                                asperiores
+                                assumenda explicabo vitae ducimus repellat omnis
+                                officiis quisquam culpa consequuntur alias
+                                voluptatibus, doloribus nisi aut? Molestiae,
+                                velit
+                                beatae? Excepturi assumenda iste facere iure
+                                ratione
+                                exercitationem, velit in autem alias facilis
+                                veniam
+                                adipisci inventore illum esse. Temporibus, quas
+                                repellat. Non inventore, porro et corporis
+                                reiciendis facilis quos, animi officiis nisi
+                                fuga
+                                repellendus, ratione sequi! Laborum, ea hic
+                                vitae
+                                quisquam explicabo eveniet reiciendis esse.
+                                Ducimus
+                                qui voluptate cupiditate dolorum! Maiores ullam
+                                dolorem reiciendis aliquid id. Lorem ipsum
+                                dolor,
+                                sit amet consectetur adipisicing elit. Corrupti
+                                fugit reprehenderit accusamus quos suscipit!
+                                Fuga
+                                velit, excepturi iure architecto laudantium
+                                labore
+                                tenetur veritatis numquam maiores rerum
+                                asperiores
+                                assumenda explicabo vitae ducimus repellat omnis
+                                officiis quisquam culpa consequuntur alias
+                                voluptatibus, doloribus nisi aut? Molestiae,
+                                velit
+                                beatae? Excepturi assumenda iste facere iure
+                                ratione
+                                exercitationem, velit in autem alias facilis
+                                veniam
+                                adipisci inventore illum esse. Temporibus, quas
+                                repellat. Non inventore, porro et corporis
+                                reiciendis facilis quos, animi officiis nisi
+                                fuga
+                                repellendus, ratione sequi! Laborum, ea hic
+                                vitae
+                                quisquam explicabo eveniet reiciendis esse.
+                                Ducimus
+                                qui voluptate cupiditate dolorum! Maiores ullam
+                                dolorem reiciendis aliquid id. Lorem ipsum
+                                dolor,
+                                sit amet consectetur adipisicing elit. Corrupti
+                                fugit reprehenderit accusamus quos suscipit!
+                                Fuga
+                                velit, excepturi iure architecto laudantium
+                                labore
+                                tenetur veritatis numquam maiores rerum
+                                asperiores
+                                assumenda explicabo vitae ducimus repellat omnis
+                                officiis quisquam culpa consequuntur alias
+                                voluptatibus, doloribus nisi aut? Molestiae,
+                                velit
+                                beatae? Excepturi assumenda iste facere iure
+                                ratione
+                                exercitationem, velit in autem alias facilis
+                                veniam
+                                adipisci inventore illum esse. Temporibus, quas
+                                repellat. Non inventore, porro et corporis
+                                reiciendis facilis quos, animi officiis nisi
+                                fuga
+                                repellendus, ratione sequi! Laborum, ea hic
+                                vitae
+                                quisquam explicabo eveniet reiciendis esse.
+                                Ducimus
+                                qui voluptate cupiditate dolorum! Maiores ullam
+                                dolorem reiciendis aliquid id.
+                            </div>
+                            <div
+                                class="fifth-experiment__block fifth-experiment__block--yellow">
+                                <p>Має position: sticky та z-index: 2</p>
+                            </div>
+                            <div class="fifth-experiment__text">Lorem ipsum
+                                dolor,
+                                sit amet consectetur adipisicing elit. Corrupti
+                                fugit reprehenderit accusamus quos suscipit!
+                                Fuga
+                                velit, excepturi iure architecto laudantium
+                                labore
+                                tenetur veritatis numquam maiores rerum
+                                asperiores
+                                assumenda explicabo vitae ducimus repellat omnis
+                                officiis quisquam culpa consequuntur alias
+                                voluptatibus, doloribus nisi aut? Molestiae,
+                                velit
+                                beatae? Excepturi assumenda iste facere iure
+                                ratione
+                                exercitationem, velit in autem alias facilis
+                                veniam
+                                adipisci inventore illum esse. Temporibus, quas
+                                repellat. Non inventore, porro et corporis
+                                reiciendis facilis quos, animi officiis nisi
+                                fuga
+                                repellendus, ratione sequi! Laborum, ea hic
+                                vitae
+                                quisquam explicabo eveniet reiciendis esse.
+                                Ducimus
+                                qui voluptate cupiditate dolorum! Maiores ullam
+                                dolorem reiciendis aliquid id. Lorem ipsum
+                                dolor,
+                                sit amet consectetur adipisicing elit. Corrupti
+                                fugit reprehenderit accusamus quos suscipit!
+                                Fuga
+                                velit, excepturi iure architecto laudantium
+                                labore
+                                tenetur veritatis numquam maiores rerum
+                                asperiores
+                                assumenda explicabo vitae ducimus repellat omnis
+                                officiis quisquam culpa consequuntur alias
+                                voluptatibus, doloribus nisi aut? Molestiae,
+                                velit
+                                beatae? Excepturi assumenda iste facere iure
+                                ratione
+                                exercitationem, velit in autem alias facilis
+                                veniam
+                                adipisci inventore illum esse. Temporibus, quas
+                                repellat. Non inventore, porro et corporis
+                                reiciendis facilis quos, animi officiis nisi
+                                fuga
+                                repellendus, ratione sequi! Laborum, ea hic
+                                vitae
+                                quisquam explicabo eveniet reiciendis esse.
+                                Ducimus
+                                qui voluptate cupiditate dolorum! Maiores ullam
+                                dolorem reiciendis aliquid id. Lorem ipsum
+                                dolor,
+                                sit amet consectetur adipisicing elit. Corrupti
+                                fugit reprehenderit accusamus quos suscipit!
+                                Fuga
+                                velit, excepturi iure architecto laudantium
+                                labore
+                                tenetur veritatis numquam maiores rerum
+                                asperiores
+                                assumenda explicabo vitae ducimus repellat omnis
+                                officiis quisquam culpa consequuntur alias
+                                voluptatibus, doloribus nisi aut? Molestiae,
+                                velit
+                                beatae? Excepturi assumenda iste facere iure
+                                ratione
+                                exercitationem, velit in autem alias facilis
+                                veniam
+                                adipisci inventore illum esse. Temporibus, quas
+                                repellat. Non inventore, porro et corporis
+                                reiciendis facilis quos, animi officiis nisi
+                                fuga
+                                repellendus, ratione sequi! Laborum, ea hic
+                                vitae
+                                quisquam explicabo eveniet reiciendis esse.
+                                Ducimus
+                                qui voluptate cupiditate dolorum! Maiores ullam
+                                dolorem reiciendis aliquid id.
+                            </div>
+                            <div
+                                class="fifth-experiment__block fifth-experiment__block--green"><p>Має
+                                    position: sticky, але не має z-index, тому
+                                    ховається за жовтий</p>
+                            </div>
+                            <div class="fifth-experiment__text">Lorem ipsum
+                                dolor,
+                                sit amet consectetur adipisicing elit. Corrupti
+                                fugit reprehenderit accusamus quos suscipit!
+                                Fuga
+                                velit, excepturi iure architecto laudantium
+                                labore
+                                tenetur veritatis numquam maiores rerum
+                                asperiores
+                                assumenda explicabo vitae ducimus repellat omnis
+                                officiis quisquam culpa consequuntur alias
+                                voluptatibus, doloribus nisi aut? Molestiae,
+                                velit
+                                beatae? Excepturi assumenda iste facere iure
+                                ratione
+                                exercitationem, velit in autem alias facilis
+                                veniam
+                                adipisci inventore illum esse. Temporibus, quas
+                                repellat. Non inventore, porro et corporis
+                                reiciendis facilis quos, animi officiis nisi
+                                fuga
+                                repellendus, ratione sequi! Laborum, ea hic
+                                vitae
+                                quisquam explicabo eveniet reiciendis esse.
+                                Ducimus
+                                qui voluptate cupiditate dolorum! Maiores ullam
+                                dolorem reiciendis aliquid id. Lorem ipsum
+                                dolor,
+                                sit amet consectetur adipisicing elit. Corrupti
+                                fugit reprehenderit accusamus quos suscipit!
+                                Fuga
+                                velit, excepturi iure architecto laudantium
+                                labore
+                                tenetur veritatis numquam maiores rerum
+                                asperiores
+                                assumenda explicabo vitae ducimus repellat omnis
+                                officiis quisquam culpa consequuntur alias
+                                voluptatibus, doloribus nisi aut? Molestiae,
+                                velit
+                                beatae? Excepturi assumenda iste facere iure
+                                ratione
+                                exercitationem, velit in autem alias facilis
+                                veniam
+                                adipisci inventore illum esse. Temporibus, quas
+                                repellat. Non inventore, porro et corporis
+                                reiciendis facilis quos, animi officiis nisi
+                                fuga
+                                repellendus, ratione sequi! Laborum, ea hic
+                                vitae
+                                quisquam explicabo eveniet reiciendis esse.
+                                Ducimus
+                                qui voluptate cupiditate dolorum! Maiores ullam
+                                dolorem reiciendis aliquid id. Lorem ipsum
+                                dolor,
+                                sit amet consectetur adipisicing elit. Corrupti
+                                fugit reprehenderit accusamus quos suscipit!
+                                Fuga
+                                velit, excepturi iure architecto laudantium
+                                labore
+                                tenetur veritatis numquam maiores rerum
+                                asperiores
+                                assumenda explicabo vitae ducimus repellat omnis
+                                officiis quisquam culpa consequuntur alias
+                                voluptatibus, doloribus nisi aut? Molestiae,
+                                velit
+                                beatae? Excepturi assumenda iste facere iure
+                                ratione
+                                exercitationem, velit in autem alias facilis
+                                veniam
+                                adipisci inventore illum esse. Temporibus, quas
+                                repellat. Non inventore, porro et corporis
+                                reiciendis facilis quos, animi officiis nisi
+                                fuga
+                                repellendus, ratione sequi! Laborum, ea hic
+                                vitae
+                                quisquam explicabo eveniet reiciendis esse.
+                                Ducimus
+                                qui voluptate cupiditate dolorum! Maiores ullam
+                                dolorem reiciendis aliquid id.
+                            </div>
+                        </div>
+                    </div>
+                    <a class="experiments__link" href="#up">Наверх</a>
                 </div>
-                <a class="experiments__link" href="#up">Наверх</a>
-            </div>
-            <div class="task">
-                <h2 id="pract"> Практика</h2>
-                <div class="task__clauses clauses">
-                    <ul class="clauses__list">
-                        <li class="clauses__item clauses__item--up">
-                            Unlimited product updates
-                        </li>
-                        <li class="clauses__item clauses__item--up">
-                            Unlimited product
-                        </li>
-                        <li class="clauses__item clauses__item--up">
-                            Unlimited product
-                        </li>
-                        <li class="clauses__item clauses__item--out">
-                            1GB Cloud storage
-                        </li>
-                        <li class="clauses__item clauses__item--out">
-                            Email and community support
-                        </li>
-                    </ul>
+                <div class="task">
+                    <h2 id="pract"> Практика</h2>
+                    <div class="task__clauses clauses" id="clauses">
+                        <ul class="clauses__list">
+                            <li class="clauses__item">
+                                Unlimited product updates
+                            </li>
+                            <li class="clauses__item">
+                                Unlimited product
+                            </li>
+                            <li class="clauses__item">
+                                Unlimited product
+                            </li>
+                            <li class="clauses__item">
+                                1GB Cloud storage
+                            </li>
+                            <li class="clauses__item">
+                                Email and community support
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="task__products products-cards" id="cards">
+                        <div class="products-cards__container">
+                            <h3>Face</h3>
+                            <div class="products-cards__cards">
+                                <div class="products-cards__card" id="cleanser">
+                                    <a href="#">
+                                        <img src="img/cleanser.jpg"
+                                            alt="Жінка з мильною піною на обличчі, заплющеними очима та широкою посмішкою">
+                                        <div class="products-cards__content">
+                                            <h4>Cleansers</h4>
+                                            <p>More</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="products-cards__card" id="patches">
+                                    <a href="#">
+                                        <img src="img/eye-patches.jpg"
+                                            alt="Жінка з червоним волоссям у футболці зчервоними смужками та накладеними косметичними патчами під очі, один з яких підтримує пальцями">
+                                        <div class="products-cards__content">
+                                            <h4>Eye
+                                                Patches</h4>
+                                            <p>More</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="products-cards__card" id="mask">
+                                    <a href="#">
+                                        <img src="img/mask.jpg"
+                                            alt="Жінка з заплющеними очима притискає до обличчя білу косметичну маску">
+                                        <div class="products-cards__content">
+                                            <h4>Мasks</h4>
+                                            <p>More</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="products-cards__buttom">
+                            More
+                        </a>
+                    </div>
+                    <a class="task__link" href="#up">Наверх</a>
                 </div>
-                <a class="task__link" href="#up">Наверх</a>
-            </div>
-        </main>
-        <footer class="footer">
-            <div class="footer__container">
-                <a class="footer__link" href="#up">Наверх</a>
-                <p>Листопад, 2025</p>
-            </div>
-        </footer>
+            </main>
+            <footer class="footer">
+                <div class="footer__container">
+                    <a class="footer__link" href="#up">Наверх</a>
+                    <p>Листопад, 2025</p>
+                </div>
+            </footer>
+        </div>
     </body>
-
 </html>

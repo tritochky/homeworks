@@ -6,6 +6,12 @@ body {
     font-size: 18px;
 }
 
+.wrapper {
+    position: relative;
+    min-height: 100%;
+    overflow: clip;
+}
+
 .footer,
 .header {
     background-color: hsl(98, 61%, 76%);
@@ -18,18 +24,85 @@ body {
     padding: 10px;
 }
 
+.header__container {
+    max-width: 1900px;
+    text-align: center;
+}
+
+.menu__list {
+    font-size: 0;
+}
+
+.submenu__item,
+.menu__item {
+    position: relative;
+    display: inline-block;
+}
+
+.sub-submenu__item:hover .sub-submenu__link,
+.submenu__item:hover .submenu__link,
+.menu__item:hover .menu__link {
+    color: #dc143c;
+}
+
+.submenu__item:hover .submenu__sub-submenu,
+.menu__item:hover .menu__submenu {
+    opacity: 1;
+    visibility: visible;
+}
+
+.menu__item:not(:last-child) {
+    margin-right: 500px;
+}
+
+.menu__link {
+    padding: 10px;
+}
+
+.menu__submenu {
+    position: absolute;
+    top: 100%;
+    left: 20px;
+}
+
+.submenu__sub-submenu {
+    position: absolute;
+    top: 0;
+    left: 80px;
+}
+
+.submenu__sub-submenu,
+.menu__submenu {
+    background-color: #1baa7a;
+    border: 2px solid rgb(51, 112, 51);
+    border-radius: 10px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.sub-submenu,
+.submenu {
+    width: 150px;
+    padding: 15px;
+}
+
+.menu__item:not(:last-child) {
+    margin-bottom: 5px;
+}
+
+.sub-submenu__link,
+.submenu__link,
+.menu__link {
+    font-size: 18px;
+}
+
 [class*="__wrapper"] {
     max-width: 1050px;
     margin: 0 auto;
 }
 
-[class*="__block"] p,
-.header__navigation {
+[class*="__block"] p {
     text-align: center;
-}
-
-.header__link:not(:last-child) {
-    margin-right: 200px;
 }
 
 [class*="__link"] {
@@ -37,8 +110,12 @@ body {
     padding: 20px 0;
 }
 
+[class*="__link--none-margin"] {
+    padding: 5px 20px;
+}
+
 .footer__container p,
-[class*="__link"]:not(.header__link) {
+[class*="__link"]:not([class*="__link--none-margin"]) {
     margin-left: 30px;
 }
 
@@ -121,9 +198,13 @@ h2 {
 
 [class*="-experiment__block--yellow"] {
     position: relative;
-    bottom: 25px;
     left: 60px;
     z-index: 2;
+}
+
+.fourth-experiment__block--yellow,
+.second-experiment__block--yellow {
+    bottom: 25px;
 }
 
 .second-experiment__block--green {
@@ -169,7 +250,6 @@ h2 {
     position: absolute;
     top: 60px;
     left: 60px;
-    /* height: 130px; */
 }
 
 .third-experiment__block--absolute {
@@ -184,22 +264,34 @@ h2 {
     right: 40px;
 }
 
+.fifth-experiment__block {
+    border-radius: 20px 20px 0 0;
+    position: sticky;
+    top: 0;
+}
+
+.fifth-experiment__text {
+    background-color: rgb(209, 190, 165);
+    border-radius: 0 0 20px 20px;
+    padding: 10px;
+    max-width: 1000px;
+}
+
 .task__clauses {
     max-width: 350px;
     margin: 0 auto;
-    /* margin-bottom: 30px; */
     border: 1px solid rgb(253, 251, 251);
     border-radius: 8px;
     box-shadow: 0 13px 19px 0 rgba(0, 0, 0, 0.07);
     background: #ffffff;
+    margin-bottom: 30px;
 }
 
-.task__clauses .clauses__list {
+.clauses__list {
     padding: 16px 0;
     min-width: 270px;
     height: 100%;
     max-height: 268px;
-    margin-bottom: -15px;
 }
 
 .clauses__item {
@@ -209,26 +301,119 @@ h2 {
     line-height: 171%;
     letter-spacing: 0.01em;
     color: #252b42;
-    margin: 0 0 15px 30px;
+    margin-left: 40px;
     padding-left: 42px;
+    position: relative;
+    min-height: 32px;
 }
 
-.clauses__item--up::before {
+.clauses__item:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.clauses__item::before {
     content: "";
+    background: url(../img/check-out.svg);
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: 0;
+    top: -5px;
+}
+
+.clauses__item:hover::before {
     background: url(../img/check.svg);
 }
 
-.clauses__item--out::before {
-    content: "";
-    background: url(../img/check-out.svg);
+.task__products {
+    max-width: 1200px;
 }
 
-.clauses__item--up::before,
-.clauses__item--out::before {
+.products-cards__wrapper,
+.products-cards {
+    font-size: 0;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.products-cards h3 {
+    font-family: "Playfair Display";
+    font-size: 20px;
+    line-height: 1.35;
+    color: #000000;
+    padding-bottom: 48px;
+}
+
+.products-cards h3::before {
     content: "";
-    vertical-align: middle;
-    width: 32px;
-    height: 32px;
-    margin-right: 10px;
-    margin-left: -42px;
+    height: 1px;
+    display: block;
+    background-color: rgba(131, 127, 127, 1);
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.products-cards h3::before {
+    content: "";
+    margin-bottom: 46px;
+}
+
+.products-cards__container {
+    max-width: 1030px;
+    margin: 0 auto;
+    padding: 0 15px;
+    text-align: center;
+}
+
+.products-cards__cards {
+    margin: 0 -62.5px;
+    font-size: 0;
+    margin-bottom: 77px;
+}
+
+.products-cards__card {
+    display: inline-block;
+    padding: 0 62.5px;
+    font-size: 16px;
+    position: relative;
+}
+
+.products-cards__card a {
+    max-width: 250px;
+    position: relative;
+}
+
+.products-cards__content {
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    bottom: 3.8095%;
+    color: #fff;
+    text-align: center;
+    z-index: 2;
+}
+
+.products-cards__content h4 {
+    font-family: "Playfair Display";
+    font-size: 28px;
+    line-height: 1.32;
+    margin-bottom: 110px;
+    color: rgb(255, 255, 255);
+    text-transform: capitalize;
+}
+
+.products-cards__content p {
+    font-family: "Playfair Display";
+    font-size: 17px;
+    line-height: 1.35;
+    color: rgb(255, 255, 255);
+}
+
+.products-cards__buttom {
+    color: #000;
+    font-size: 14px;
+    line-height: 1.36;
+    border: 1px solid #000;
+    padding: 10px 50px 10px;
+    margin-bottom: 30px;
 }
