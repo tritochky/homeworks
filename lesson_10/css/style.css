@@ -4,6 +4,7 @@
 body {
     font-family: "Playfair Display", sans-serif;
     font-size: 18px;
+    background-color: rgb(236, 218, 195);
 }
 
 .wrapper {
@@ -417,3 +418,4 @@ h2 {
     padding: 10px 50px 10px;
     margin-bottom: 30px;
 }
+
