@@ -328,7 +328,7 @@ h2 {
 
 .task__products {
     max-width: 1200px;
-    background-color: #000000;
+    background: #ffffff;
 }
 
 .products-cards__wrapper,
@@ -419,5 +419,6 @@ h2 {
     padding: 10px 50px 10px;
     margin-bottom: 30px;
 }
+
 
 
