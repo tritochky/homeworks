@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="kzz">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Homework_11</title>
+    </head>
+    <body>
+        <div class="wrapper" id="up">
+            <header class="header">
+                <div class="header__container">
+                    <div class="menu">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a
+                                    class="menu__link"
+                                    href="#exp">Експерименти</a>
+                                <ul class="menu__submenu submenu">
+                                    <li class="submenu__item">
+                                        <a
+                                            class="submenu__link submenu__link--none-margin"
+                                            href="#2d">2D
+                                            Transform</a></li>
+                                    <li
+                                        class="submenu__item"><a
+                                            class="submenu__link submenu__link--none-margin"
+                                            href="#3d">3D Transform</a></li>
+                                    <li class="submenu__item"><a
+                                            class="submenu__link submenu__link--none-margin"
+                                            href="#flipper">Flipper</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu__item">
+                                <a
+                                    class="menu__link"
+                                    href="#pract">Практика</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+            <main>
+                <div class="experiments">
+                    <div class="experiments__item first-experiment" id="2d">
+                        <h1 id="exp">2D Transform</h1>
+                        <div class="first-experiment__wrapper">
+                            <div
+                                class="first-experiment__dad-block">
+                                <div
+                                    class="first-experiment__block first-experiment__block--translate"><p>transform:
+                                        translate(20%,20%);</p></div>
+                            </div>
+                            <div
+                                class="first-experiment__dad-block">
+                                <div
+                                    class="first-experiment__block first-experiment__block--translate-xy"><p>або
+                                        окрема властивість
+                                        translate: <br> -40px -40px;</p></div>
+                            </div>
+                            <div
+                                class="first-experiment__dad-block">
+                                <div
+                                    class="first-experiment__block first-experiment__block--translate-y"><p>transform:
+                                        translateY(50px)</p></div>
+                            </div>
+                            <div
+                                class="first-experiment__dad-block">
+                                <div
+                                    class="first-experiment__block first-experiment__block--translate-x"><p>transform:
+                                        translateX(-40px)</p></div>
+                            </div>
+                            <div
+                                class="first-experiment__dad-block">
+                                <div
+                                    class="first-experiment__block first-experiment__block--scale"><p>transform:
+                                        scale(1.6);</p></div>
+                            </div>
+                            <div
+                                class="first-experiment__dad-block">
+                                <div
+                                    class="first-experiment__block first-experiment__block--simple-scale"><p>або
+                                        окрема властивість <br> scale:
+                                        0.2;</p></div>
+                            </div>
+                            <div
+                                class="first-experiment__dad-block">
+                                <div
+                                    class="first-experiment__block first-experiment__block--scale-xy"><p>transform:
+                                        <br> scale(1.2, 2);</p></div>
+                            </div>
+                            <div
+                                class="first-experiment__dad-block">
+                                <div
+                                    class="first-experiment__block first-experiment__block--rotate"><p>transform:
+                                        rotate(30deg);</p></div>
+                            </div>
+                            <div
+                                class="first-experiment__dad-block">
+                                <div
+                                    class="first-experiment__block first-experiment__block--simple-rotate"><p>або
+                                        окрема властивість <br> rotate:
+                                        -45deg;</p></div>
+                            </div>
+                            <div
+                                class="first-experiment__dad-block">
+                                <div
+                                    class="first-experiment__block first-experiment__block--rotate-y"><p>transform:
+                                        rotateY(120deg);</p></div>
+                            </div>
+                            <div
+                                class="first-experiment__dad-block">
+                                <div
+                                    class="first-experiment__block first-experiment__block--rotate-x"><p>transform:
+                                        rotateX(-50deg);</p></div>
+                            </div>
+                            <div
+                                class="first-experiment__dad-block">
+                                <div
+                                    class="first-experiment__block first-experiment__block--skew"><p>transform:
+                                        skew(20deg, 40deg);</p></div>
+                            </div>
+                            <div
+                                class="first-experiment__dad-block">
+                                <div
+                                    class="first-experiment__block first-experiment__block--skew-y"><p>transform:
+                                        skewY(-50deg);</p></div>
+                            </div>
+                            <div
+                                class="first-experiment__dad-block">
+                                <div
+                                    class="first-experiment__block first-experiment__block--skew-x"><p>transform:
+                                        skewX(-110deg);</p></div>
+                            </div>
+                            <div
+                                class="first-experiment__dad-block">
+                                <div
+                                    class="first-experiment__block first-experiment__block--matrix"><p>transform:
+                                        matrix(0.5, 2, 2, 0.8, 20,
+                                        40);</p></div>
+                            </div>
+                            <div
+                                class="first-experiment__dad-block">
+                                <div
+                                    class="first-experiment__block first-experiment__block--multy-transform"><p>transform:
+                                        translate(20%, 20%) scale(0.65)
+                                        rotate(30deg) skew(20deg,
+                                        20deg);</p></div>
+                            </div>
+                            <div
+                                class="first-experiment__dad-block">
+                                <div
+                                    class="first-experiment__block first-experiment__block--origin-letter"><p>transform-origin:
+                                        <br> top right; <br> rotate:
+                                        25deg;</p></div>
+                            </div>
+                            <div
+                                class="first-experiment__dad-block">
+                                <div
+                                    class="first-experiment__block first-experiment__block--origin-0"><p>transform-origin:
+                                        <br> 0 0; <br> rotate: -25deg;</p></div>
+                            </div>
+                            <div
+                                class="first-experiment__dad-block">
+                                <div
+                                    class="first-experiment__block first-experiment__block--origin-px"><p>transform-origin:
+                                        100px 150px; rotate: 45deg;</p></div>
+                            </div>
+                            <div
+                                class="first-experiment__dad-block">
+                                <div
+                                    class="first-experiment__block first-experiment__block--origin-perc"><p>transform-origin:
+                                        100% -50%; <br> rotate:
+                                        -45deg;</p></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="experiments__item second-experiment" id="3d">
+                        <h2>3D Transform</h2>
+                        <div class="second-experiment__wrapper">
+                            <div class="second-experiment__dad-block">
+                                <div
+                                    class="second-experiment__block second-experiment__block--translate3d">
+                                    <p> perspective: 250px;
+                                        perspective-origin:center;
+                                        transform: translate3d(30px, 40px,
+                                        50px);</p>
+                                </div>
+                            </div>
+                            <div class="second-experiment__dad-block">
+                                <div
+                                    class="second-experiment__block second-experiment__block--scale3d">
+                                    <p>perspective: 250px;
+                                        perspective-origin:center; transform:
+                                        scale3d(1.5, 1.2, 2);</p>
+                                </div>
+                            </div>
+                            <div
+                                class="second-experiment__dad-block second-experiment__dad-block--origin">
+                                <div
+                                    class="second-experiment__block second-experiment__block--rotate3d">
+                                    <p>perspective: 100px;
+                                        perspective-origin: bottom right;
+                                        transform: rotate3d(0, 2, 5, 40deg);</p>
+                                </div>
+                            </div>
+                            <div class="second-experiment__dad-block">
+                                <div
+                                    class="second-experiment__block second-experiment__block--rotate-x">
+                                    <p>perspective: 250px;
+                                        perspective-origin:center; transform:
+                                        rotateX(60deg)</p>
+                                </div>
+                            </div>
+                            <div class="second-experiment__dad-block">
+                                <div
+                                    class="second-experiment__block second-experiment__block--rotate-y">
+                                    <p>perspective: 250px;
+                                        perspective-origin:center; transform:
+                                        rotateY(-60deg)</p>
+                                </div>
+                            </div>
+                            <div class="second-experiment__dad-block">
+                                <div
+                                    class="second-experiment__block second-experiment__block--multy3d">
+                                    <p>transform: translate3d(20px, 20px, 20px)
+                                        scale3d(1.5, 1.5, 1.5) rotate3d(2, 2, 2,
+                                        30deg);</p>
+                                </div>
+                            </div>
+                            <div
+                                class="second-experiment__dad-block second-experiment__dad-block--preserve3d">
+                                <div
+                                    class="second-experiment__block second-experiment__block--preserve-y">
+                                    <p> perspective: 250px;
+                                        transform-style: preserve-3d; transform:
+                                        rotateY(60deg);</p>
+                                </div>
+                            </div>
+                            <div
+                                class="second-experiment__dad-block second-experiment__dad-block--preserve3d">
+                                <div
+                                    class="second-experiment__block second-experiment__block--preserve-x">
+                                    <p>perspective: 250px;
+                                        transform-style: preserve-3d; transform:
+                                        rotateX(-60deg);</p>
+                                </div>
+                            </div>
+                            <div class="second-experiment__dad-block">
+                                <div
+                                    class="second-experiment__block second-experiment__block--backface">
+                                    <p>backface-visibility: visible; <br>
+                                        transform:
+                                        rotateY(150deg);</p>
+                                </div>
+                            </div>
+                            <div class="second-experiment__dad-block">
+                                <div
+                                    class="second-experiment__block second-experiment__block--no-backface">
+                                    <p>backface-visibility: hidden; <br>
+                                        transform:
+                                        rotateY(150deg);</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="experiments__item third-experiment"
+                        id="flipper">
+                        <h2>Flipper</h2>
+                        <div class="third-experiment__wrapper">
+                            <div class="third-experiment__medal medal">
+                                <div class="medal__body">
+                                    <div class="medal__back">
+                                        <img src="img/medal-back.webp"
+                                            alt="Зворотній бік круглої золотої медалі">
+                                    </div>
+                                    <div class="medal__front">
+                                        <img src="img/medal-front.webp"
+                                            alt="Кругла золота медаль з цифрою один">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="experiments__link" href="#up">Наверх</a>
+                </div>
+                <div class="task">
+                    <h2 id="pract"> Практика</h2>
+                    <div class="task__wrapper">
+                        <div class="task__sky">
+                            <div class="task__sun"></div>
+                            <div class="task__cloud"></div>
+                        </div>
+                        <div class="task__cart cart">
+                            <div class="cart__roof">
+                                <div class="cart__crown"></div>
+                                <div class="cart__crown-stay"></div>
+                            </div>
+                            <div class="cart__body">
+                                <div class="cart__midle-body"></div>
+                                <div class="cart__side-body"></div>
+                                <div
+                                    class="cart__side-body cart__side-body--rotate"></div>
+                                <div class="cart__door">
+                                    <div class="cart__window">
+                                    </div>
+                                </div>
+                                <div class="cart__door cart__door--rotate">
+                                    <div class="cart__window">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart__floor">
+                                <div class="cart__side-floor"></div>
+                                <div
+                                    class="cart__side-floor cart__side-floor--rotate"></div>
+                            </div>
+                            <div class="cart__weel">
+                                <div class="cart__spoke"></div>
+                                <div
+                                    class="cart__spoke cart__spoke--rotate1"></div>
+                                <div
+                                    class="cart__spoke cart__spoke--rotate2"></div>
+                                <div
+                                    class="cart__spoke cart__spoke--rotate3"></div>
+                                <div
+                                    class="cart__spoke cart__spoke--rotate4"></div>
+                                <div
+                                    class="cart__spoke cart__spoke--rotate5"></div>
+                            </div>
+                            <div class="cart__weel cart__weel--translate">
+                                <div class="cart__spoke"></div>
+                                <div
+                                    class="cart__spoke cart__spoke--rotate1"></div>
+                                <div
+                                    class="cart__spoke cart__spoke--rotate2"></div>
+                                <div
+                                    class="cart__spoke cart__spoke--rotate3"></div>
+                                <div
+                                    class="cart__spoke cart__spoke--rotate4"></div>
+                                <div
+                                    class="cart__spoke cart__spoke--rotate5"></div>
+                            </div>
+                            <!-- <div class="cart__shadow"></div> -->
+                        </div>
+                        <div class="task__horse"></div>
+                    </div>
+                    <a class="task__link" href="#up">Наверх</a>
+                </div>
+            </main>
+            <footer class="footer">
+                <div class="footer__container">
+                    <a class="footer__link" href="#up">Наверх</a>
+                    <p>Листопад, 2025</p>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
