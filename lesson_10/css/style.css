@@ -303,6 +303,7 @@ h2 {
     letter-spacing: 0.01em;
     color: #252b42;
     margin-left: 40px;
+    padding-top: 5px;
     padding-left: 42px;
     position: relative;
     min-height: 32px;
@@ -317,9 +318,10 @@ h2 {
     background: url(../img/check-out.svg);
     width: 32px;
     height: 32px;
+
     position: absolute;
     left: 0;
-    top: -5px;
+    top: 0;
 }
 
 .clauses__item:hover::before {
@@ -327,7 +329,7 @@ h2 {
 }
 
 .task__products {
-    max-width: 1200px;
+    width: 100%;
     background: #ffffff;
 }
 
@@ -343,34 +345,21 @@ h2 {
     font-size: 20px;
     line-height: 1.35;
     color: #000000;
-    padding-bottom: 48px;
-}
-
-.products-cards h3::before {
-    content: "";
-    height: 1px;
-    display: block;
-    background-color: rgba(131, 127, 127, 1);
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-.products-cards h3::before {
-    content: "";
-    margin-bottom: 46px;
+    margin-bottom: 48px;
 }
 
 .products-cards__container {
     max-width: 1030px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 46px 15px 15px;
     text-align: center;
+    border-top: 1px solid rgba(131, 127, 127, 1);
+    margin-bottom: 62px;
 }
 
 .products-cards__cards {
     margin: 0 -62.5px;
     font-size: 0;
-    margin-bottom: 77px;
 }
 
 .products-cards__card {
@@ -419,6 +408,3 @@ h2 {
     padding: 10px 50px 10px;
     margin-bottom: 30px;
 }
-
-
-
