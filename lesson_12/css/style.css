@@ -476,14 +476,12 @@ h2,
     position: absolute;
     top: 0;
     left: 0;
+    opacity: 0;
     animation: horse-moove 0.8s infinite linear;
 }
 
 @keyframes horse-moove {
     0% {
-        opacity: 0;
-    }
-    0.1% {
         opacity: 1;
     }
     24.9% {
