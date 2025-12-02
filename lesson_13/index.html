@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="kzz">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Homework_13</title>
+    </head>
+    <body>
+        <div class="wrapper" id="up">
+            <header class="header">
+                <div class="header__container">
+                    <div class="header__menu menu">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a
+                                    class="menu__link"
+                                    href="#exp">Експерименти</a>
+                                <ul class="menu__submenu submenu">
+                                    <li class="submenu__item">
+                                        <a
+                                            class="submenu__link submenu__link--none-margin"
+                                            href="#cont">Властивості
+                                            flex-контейнера</a></li>
+                                    <li
+                                        class="submenu__item"><a
+                                            class="submenu__link submenu__link--none-margin"
+                                            href="#elem">Властивості
+                                            flex-елементів</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu__item">
+                                <a
+                                    class="menu__link"
+                                    href="#pract">Практика</a>
+                                <ul class="menu__submenu submenu">
+                                    <li class="submenu__item">
+                                        <a
+                                            class="submenu__link submenu__link--none-margin"
+                                            href="#t1">Task 1</a></li>
+                                    <li
+                                        class="submenu__item"><a
+                                            class="submenu__link submenu__link--none-margin"
+                                            href="#t2">Task 2</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+            <main>
+                <div class="experiments" id="exp">
+                    <h1 id="exp">Урок № 13: модуль FLEX</h1>
+                    <h2 id="cont">Властивості flex-контейнера</h2>
+                    <div class="experiments__wrapper container">
+                        <h3>Властивість <span>flex-wrap</span></h3>
+                        <div class="container__dad container__dad--nowrap">
+                            <div class="container__child">1</div>
+                            <div class="container__child">2</div>
+                            <div class="container__child">3</div>
+                            <div class="container__child">4</div>
+                            <div class="container__child">5<br><span>flex-wrap:
+                                    nowrap;</span>
+                                забороняє елементам переходити на інший
+                                рядок (за замовченням)</div>
+                        </div>
+                        <div class="container__dad container__dad--wrap">
+                            <div class="container__child">1</div>
+                            <div class="container__child">2</div>
+                            <div class="container__child">3</div>
+                            <div class="container__child">4</div>
+                            <div class="container__child">5<br><span>flex-wrap:
+                                    wrap;</span><br>
+                                дозволяє елементам переходити на інший
+                                рядок</div>
+                        </div>
+                        <div
+                            class="container__dad container__dad--wrap-reverse">
+                            <div class="container__child">1</div>
+                            <div class="container__child">2</div>
+                            <div class="container__child">3</div>
+                            <div class="container__child">4</div>
+                            <div
+                                class="container__child">5<br><span>flex-wrap:
+                                    wrap-reverse;</span><br>
+                                дозволяє елементам переходити на інший
+                                рядок, але в зворотньому порядку</div>
+                        </div>
+                        <h3>Властивість <span>justify-content</span></h3>
+                        <div
+                            class="container__dad container__dad--wrap">
+                            <div class="container__child">1<br>тут початок
+                            </div>
+                            <div class="container__child">2</div>
+                            <div class="container__child">3</div>
+                            <div class="container__child">4</div>
+                            <div
+                                class="container__child container__child--width">5<br><span>justify-content:
+                                    flex-start;</span><br>
+                                flex-елементи притискаються до початку головної
+                                осі (за замовченням)</div>
+                        </div>
+                        <div
+                            class="container__dad container__dad--main-end container__dad--wrap">
+                            <div class="container__child">1<br>тут початок</div>
+                            <div class="container__child">2</div>
+                            <div class="container__child">3</div>
+                            <div class="container__child">4</div>
+                            <div
+                                class="container__child container__child--width">5<br><span>justify-content:
+                                    flex-end;</span><br>
+                                flex-елементи притискаються до кінця головної
+                                осі</div>
+                        </div>
+                        <div
+                            class="container__dad container__dad--main-center container__dad--wrap">
+                            <div class="container__child">1</div>
+                            <div class="container__child">2</div>
+                            <div class="container__child">3</div>
+                            <div class="container__child">4</div>
+                            <div
+                                class="container__child container__child--width">5<br><span>justify-content:
+                                    center;</span><br>
+                                flex-елементи розташовуються по центру головної
+                                осі</div>
+                        </div>
+                        <div
+                            class="container__dad container__dad--wrap container__dad--space-between">
+                            <div class="container__child">1</div>
+                            <div class="container__child">2</div>
+                            <div class="container__child">3</div>
+                            <div class="container__child">4</div>
+                            <div
+                                class="container__child container__child--width">5<br><span>justify-content:
+                                    space-between;</span><br>
+                                flex-елементи розташовуються рівномірно вздовж
+                                головної
+                                осі</div>
+                        </div>
+                        <div
+                            class="container__dad container__dad--wrap container__dad--space-around">
+                            <div class="container__child">1</div>
+                            <div class="container__child">2</div>
+                            <div class="container__child">3</div>
+                            <div class="container__child">4</div>
+                            <div
+                                class="container__child container__child--width">5<br><span>justify-content:
+                                    space-around;</span><br>
+                                flex-елементи розташовуються рівномірно вздовж
+                                головної
+                                осі, але до кожного елементу додається простір
+                                ліворуч та праворуч</div>
+                        </div>
+                        <div
+                            class="container__dad container__dad--wrap container__dad--space-evenly">
+                            <div class="container__child">1</div>
+                            <div class="container__child">2</div>
+                            <div class="container__child">3</div>
+                            <div class="container__child">4</div>
+                            <div
+                                class="container__child container__child--width">5<br><span>justify-content:
+                                    space-evenly;</span><br>
+                                flex-елементи розташовуються рівномірно вздовж
+                                головної
+                                осі з однаковим простором навколо них, але якщо
+                                місця не буде, то елементи “склеяться”</div>
+                        </div>
+                        <h3>Властивість <span>align-items</span></h3>
+                        <div
+                            class="container__dad container__dad--wrap">
+                            <div class="container__child">1</div>
+                            <div class="container__child">2</div>
+                            <div class="container__child">3</div>
+                            <div class="container__child">4</div>
+                            <div
+                                class="container__child container__child--width">5<br><span>align-items:
+                                    stretch;</span><br>
+                                flex-елементи розтягуються на весь розмір
+                                flex-контейнера вздовж другорядної осі (за
+                                замовченням)</div>
+                        </div>
+                        <div
+                            class="container__dad container__dad--wrap container__dad--cross-start">
+                            <div class="container__child">1</div>
+                            <div class="container__child">2</div>
+                            <div class="container__child">3</div>
+                            <div class="container__child">4</div>
+                            <div
+                                class="container__child container__child--width">5<br><span>align-items:
+                                    flex-start;</span><br>
+                                flex-елементи притискаються до початку
+                                другорядної осі</div>
+                        </div>
+                        <div
+                            class="container__dad container__dad--cross-end container__dad--wrap">
+                            <div
+                                class="container__child container__child--little">1</div>
+                            <div
+                                class="container__child container__child--little">2</div>
+                            <div
+                                class="container__child container__child--little">3</div>
+                            <div
+                                class="container__child container__child--little">4</div>
+                            <div
+                                class="container__child container__child--width">5<br><span>align-items:
+                                    flex-end;</span><br>
+                                flex-елементи притискаються до кінця другорядної
+                                осі</div>
+                        </div>
+                        <div
+                            class="container__dad container__dad--cross-center container__dad--wrap">
+                            <div
+                                class="container__child container__child--little">1</div>
+                            <div
+                                class="container__child container__child--little">2</div>
+                            <div
+                                class="container__child container__child--little">3</div>
+                            <div
+                                class="container__child container__child--little">4</div>
+                            <div
+                                class="container__child container__child--width">5<br><span>align-items:
+                                    center;</span><br>
+                                flex-елементи розташовуються по центру
+                                другорядної
+                                осі</div>
+                        </div>
+                        <div
+                            class="container__dad container__dad--wrap container__dad--cross-baseline">
+                            <div
+                                class="container__child container__child--little">1</div>
+                            <div
+                                class="container__child container__child--little">2</div>
+                            <div
+                                class="container__child container__child--little">3</div>
+                            <div
+                                class="container__child container__child--little container__child--font">4</div>
+                            <div
+                                class="container__child container__child--width">5<br><span>align-items:
+                                    baseline;</span><br>
+                                вирівнює flex-елементи по базовій лінії
+                                шрифтa</div>
+                        </div>
+                        <h3>Властивість <span>flex-direction</span></h3>
+                        <div
+                            class="container__dad container__dad--wrap container__dad--space-between">
+                            <div
+                                class="container__child container__child--width">1<br><span>flex-direction:
+                                    row;</span><br>
+                                основна вісь горизонтальна, початок тут (за
+                                замовчуванням)</div>
+                            <div class="container__child">2</div>
+                            <div class="container__child">3</div>
+                            <div class="container__child">4</div>
+                            <div
+                                class="container__child container__child--width">5</div>
+                        </div>
+                        <div
+                            class="container__dad container__dad--wrap container__dad--space-between container__dad--row-reverse">
+                            <div
+                                class="container__child container__child--width">1<br><span>flex-direction:
+                                    row-reverse;</span><br>
+                                основна вісь горизонтальна, але початок вже
+                                тут</div>
+                            <div class="container__child">2</div>
+                            <div class="container__child">3</div>
+                            <div class="container__child">4</div>
+                            <div
+                                class="container__child container__child--width">5</div>
+                        </div>
+                        <div
+                            class="container__wrapper container__wrapper--flex">
+                            <div
+                                class="container__dad container__dad--wrap container__dad--column">
+                                <div
+                                    class="container__child container__child--width">1<br><span>flex-direction:
+                                        column;</span><br>
+                                    основна вісь вертикальна, початок тут </div>
+                                <div class="container__child">2</div>
+                                <div class="container__child">3</div>
+                                <div class="container__child">4</div>
+                                <div
+                                    class="container__child">5</div>
+                            </div>
+                            <div
+                                class="container__dad container__dad--wrap container__dad--column-reverse">
+                                <div
+                                    class="container__child container__child--width">1<br><span>flex-direction:
+                                        column-reverse;</span><br>
+                                    основна вісь вертикальна, але початок вже
+                                    тут
+                                </div>
+                                <div class="container__child">2</div>
+                                <div class="container__child">3</div>
+                                <div class="container__child">4</div>
+                                <div
+                                    class="container__child">5</div>
+                            </div>
+                        </div>
+                    </div>
+                    <h2 id="elem">Властивості flex-елементів</h2>
+                    <div class="experiments__wrapper container">
+                        <h3>Властивість <span>align-self</span></h3>
+                        <div
+                            class="container__dad container__dad--wrap container__dad--align-self">
+                            <div
+                                class="container__child container__child--width">1<br><span>align-self:
+                                    center;</span>
+                                перевизначає вирівнювання вздовж другорядної
+                                осі для конкретного flex-елемента, для данного
+                                елемента - вирівнювання по центру другорядної
+                                осі</div>
+                            <div class="container__child">2<br>тут за
+                                замовчуванням</div>
+                            <div
+                                class="container__child container__child--width">3<br><span>align-self:
+                                    flex-start;</span>
+                                перевизначає вирівнювання вздовж другорядної
+                                осі для конкретного flex-елемента, для данного
+                                елемента - притискає до початку
+                                другорядної осі</div>
+                            <div class="container__child">4<br>тут за
+                                замовчуванням</div>
+                            <div
+                                class="container__child container__child--width">5<br><span>align-self:
+                                    flex-end;</span>
+                                перевизначає вирівнювання вздовж другорядної
+                                осі для конкретного flex-елемента, для данного
+                                елемента - притискає до кінця
+                                другорядної осі</div>
+                        </div>
+                        <h3>Властивість <span>flex-grow</span></h3>
+                        <div class="container__dad container__dad--wrap">
+                            <div class="container__child">1<br><span>flex-grow:
+                                    0;</span><br>
+                                забороняє елементу збільшуватись у розмірі (за
+                                замовченням)</div>
+                            <div
+                                class="container__child container__child--grow">5<br><span>flex-grow:
+                                    1;</span><br>
+                                дозволяє елементу збільшуватись у розмірі, поки
+                                не заповнить весь вільний простір
+                                контейнера</div>
+                        </div>
+                        <h3>Властивість <span>flex-shrink</span></h3>
+                        <div class="container__dad container__dad--wrap">
+                            <div
+                                class="container__child container__child--shrink">1<br><span>flex-shrink:
+                                    0;</span><br>
+                                забороняє елементу зменшуватись у розмірі</div>
+                            <div
+                                class="container__child">5<br><span>flex-shrink:
+                                    1;</span><br>
+                                дозволяє елементу зменшуватись у розмірі, при
+                                необхідності заповнюючи весь flex-контейнер
+                                (за замовченням)</div>
+                        </div>
+                        <h3>Властивість <span>order</span></h3>
+                        <div
+                            class="container__dad container__dad--wrap container__dad--order">
+                            <div class="container__child">1<br><span>order:
+                                    2;</span>
+                            </div>
+                            <div class="container__child">2<br><span>order:
+                                    4;</span></div>
+                            <div class="container__child">3<br><span>order:
+                                    1;</span></div>
+                            <div class="container__child">4<br><span>order:
+                                    5;</span></div>
+                            <div
+                                class="container__child">5<br><span>order:
+                                    3;</span></div>
+                        </div>
+                    </div>
+                    <a class="experiments__link" href="#up">Наверх</a>
+                </div>
+                <div class="task">
+                    <h2 id="pract"> Практика</h2>
+                    <div class="task__wrapper">
+                        <div class="task__products products" id="t1">
+                            <div class="products__container">
+                                <h3 class="products__title">FEATURED
+                                    PRODUCTS</h3>
+                                <ul class="products__menu products-menu">
+                                    <li class="products-menu__item">
+                                        <a href="#"
+                                            class="products-menu__link">ALL</a>
+                                    </li>
+                                    <li class="products-menu__item">
+                                        <a href="#"
+                                            class="products-menu__link">ON
+                                            SALE</a>
+                                    </li>
+                                    <li class="products-menu__item">
+                                        <a href="#"
+                                            class="products-menu__link">SOFA</a>
+                                    </li>
+                                    <li class="products-menu__item">
+                                        <a href="#"
+                                            class="products-menu__link">HANGING
+                                            LIGHT</a>
+                                    </li>
+                                </ul>
+                                <div class="products__cards">
+                                    <div class="products__card card">
+                                        <a href="#" target="_blank">
+                                            <img class="card__img"
+                                                src="img/chair.png"
+                                                alt="Урбанічного стилю чорний жорсткий стілець на довгих дерев'яних ніжках">
+                                            <div class="card__body">
+                                                <h4 class="card__title">URBAN
+                                                    LUX
+                                                    HIGH CHAIR</h4>
+                                                <div class="card__rating">
+                                                    <img src="img/star.svg"
+                                                        alt="Маленька чорна п'ятикутна зірка">
+                                                    <img src="img/star.svg"
+                                                        alt="Маленька чорна п'ятикутна зірка">
+                                                    <img src="img/star.svg"
+                                                        alt="Маленька чорна п'ятикутна зірка">
+                                                    <img src="img/star.svg"
+                                                        alt="Маленька чорна п'ятикутна зірка">
+                                                    <img src="img/star.svg"
+                                                        alt="Маленька чорна п'ятикутна зірка">
+                                                </div>
+                                                <div
+                                                    class="card__price">
+                                                    <p>$2668.15</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="products__card card">
+                                        <a href="#">
+                                            <img class="card__img"
+                                                src="img/hanging-light.png"
+                                                alt="Урбанічного стилю чорнa підвісна лампа з дротовим абажуром">
+                                            <div class="card__body">
+                                                <h4 class="card__title">MORDERN
+                                                    BLACK HANGING LIGHT</h4>
+                                                <div class="card__rating">
+                                                    <img src="img/star.svg"
+                                                        alt="Маленька чорна п'ятикутна зірка">
+                                                    <img src="img/star.svg"
+                                                        alt="Маленька чорна п'ятикутна зірка">
+                                                    <img src="img/star.svg"
+                                                        alt="Маленька чорна п'ятикутна зірка">
+                                                    <img src="img/star.svg"
+                                                        alt="Маленька чорна п'ятикутна зірка">
+                                                    <img src="img/star.svg"
+                                                        alt="Маленька чорна п'ятикутна зірка">
+                                                </div>
+                                                <div
+                                                    class="card__price">
+                                                    <p>$1595.6</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="products__card card">
+                                        <a href="#">
+                                            <img class="card__img"
+                                                src="img/table.png"
+                                                alt="Частина чорного мінімалістичного блискучого столу">
+                                            <div class="card__body">
+                                                <h4 class="card__title">METRO
+                                                    FUSION
+                                                    TABLE </h4>
+                                                <div class="card__rating">
+                                                    <img src="img/star.svg"
+                                                        alt="Маленька чорна п'ятикутна зірка">
+                                                    <img src="img/star.svg"
+                                                        alt="Маленька чорна п'ятикутна зірка">
+                                                    <img src="img/star.svg"
+                                                        alt="Маленька чорна п'ятикутна зірка">
+                                                    <img src="img/star.svg"
+                                                        alt="Маленька чорна п'ятикутна зірка">
+                                                    <img src="img/star.svg"
+                                                        alt="Маленька чорна п'ятикутна зірка">
+                                                </div>
+                                                <div
+                                                    class="card__price">
+                                                    <p>$2238.30</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="products__card card">
+                                        <a href="#">
+                                            <img class="card__img"
+                                                src="img/desk-lamp.png"
+                                                alt="Проста настільна лампа стриманого дизайну сірого кольору для кабінету">
+                                            <div class="card__body">
+                                                <h4 class="card__title">LUMIN
+                                                    DESK
+                                                    LAMP</h4>
+                                                <div class="card__rating">
+                                                    <img src="img/star.svg"
+                                                        alt="Маленька чорна п'ятикутна зірка">
+                                                    <img src="img/star.svg"
+                                                        alt="Маленька чорна п'ятикутна зірка">
+                                                    <img src="img/star.svg"
+                                                        alt="Маленька чорна п'ятикутна зірка">
+                                                    <img src="img/star.svg"
+                                                        alt="Маленька чорна п'ятикутна зірка">
+                                                    <img src="img/star.svg"
+                                                        alt="Маленька чорна п'ятикутна зірка">
+                                                </div>
+                                                <div
+                                                    class="card__price">
+                                                    <p>$1477.80</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="products__card card">
+                                        <a href="#">
+                                            <img class="card__img"
+                                                src="img/clock.png"
+                                                alt="Мінімалістичний настінний годинник з циферблатом білого кольору, чорним обідком та арабськими цифрами">
+                                            <div class="card__body">
+                                                <h4 class="card__title">TIMELESS
+                                                    EDGE HANGING CLOCK</h4>
+                                                <div class="card__rating">
+                                                    <img src="img/star.svg"
+                                                        alt="Маленька чорна п'ятикутна зірка">
+                                                    <img src="img/star.svg"
+                                                        alt="Маленька чорна п'ятикутна зірка">
+                                                    <img src="img/star.svg"
+                                                        alt="Маленька чорна п'ятикутна зірка">
+                                                    <img src="img/star.svg"
+                                                        alt="Маленька чорна п'ятикутна зірка">
+                                                    <img src="img/star.svg"
+                                                        alt="Маленька чорна п'ятикутна зірка">
+                                                </div>
+                                                <div
+                                                    class="card__price">
+                                                    <p>$1071.6</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="products__card card">
+                                        <a href="#">
+                                            <img class="card__img"
+                                                src="img/pendant-light.png"
+                                                alt="Сіра підвісна лампа мінімалістичного дизайну">
+                                            <div class="card__body">
+                                                <h4 class="card__title">ZENITH
+                                                    PENDANT LIGHT</h4>
+                                                <div class="card__rating">
+                                                    <img src="img/star.svg"
+                                                        alt="Маленька чорна п'ятикутна зірка">
+                                                    <img src="img/star.svg"
+                                                        alt="Маленька чорна п'ятикутна зірка">
+                                                    <img src="img/star.svg"
+                                                        alt="Маленька чорна п'ятикутна зірка">
+                                                    <img src="img/star.svg"
+                                                        alt="Маленька чорна п'ятикутна зірка">
+                                                    <img src="img/star.svg"
+                                                        alt="Маленька чорна п'ятикутна зірка">
+                                                </div>
+                                                <div
+                                                    class="card__price">
+                                                    <p>$2069.59</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="task__advantages advantages" id="t2">
+                            <div class="advantages__container">
+                                <h3 class="advantages__title">WHY CHOOSE
+                                    US?</h3>
+                                <div class="advantages__cards">
+                                    <div class="advantages__card card">
+                                        <div class="card__image">
+                                            <img src="img/planet.svg"
+                                                alt="Стилізована земна куля">
+                                        </div>
+                                        <h4 class="card__title">GLOBAL
+                                            DELIVERY</h4>
+                                        <div class="card__text">
+                                            <p>Experience Hassle-Free Shipping
+                                                and
+                                                Seamless Global Connectivity
+                                                with
+                                                Our Trustworthy and Efficient
+                                                Delivery Service, Bringing the
+                                                World
+                                                to Your Fingertips!</p>
+                                        </div>
+                                    </div>
+                                    <div class="advantages__card card">
+                                        <div class="card__image">
+                                            <img src="img/box.svg"
+                                                alt="Стилізована пакувальна коробка">
+                                        </div>
+                                        <h4 class="card__title">FREE
+                                            SHIPPING</h4>
+                                        <div class="card__text">
+                                            <p>Shop to Your Heart's Content
+                                                Without
+                                                Worrying About Shipping Costs:
+                                                Our
+                                                Free Shipping Service Delivers
+                                                Your
+                                                Purchases with a Smile, Straight
+                                                to
+                                                Your Doorstep!</p>
+                                        </div>
+                                    </div>
+                                    <div class="advantages__card card">
+                                        <div class="card__image">
+                                            <img src="img/phone.svg"
+                                                alt="Стилізована телефонна слухавка">
+                                        </div>
+                                        <h4 class="card__title">24/7
+                                            SUPPORTING</h4>
+                                        <div class="card__text">
+                                            <p>Shop with Confidence Anytime,
+                                                Anywhere: Our Free Shipping
+                                                Service
+                                                Comes with 24/7 Support to
+                                                Ensure
+                                                Your Packages Arrive Safely and
+                                                On
+                                                Time!</p>
+                                        </div>
+                                    </div>
+                                    <div class="advantages__card card">
+                                        <div class="card__image">
+                                            <img src="img/email.svg"
+                                                alt="Стилізований поштовий конверт">
+                                        </div>
+                                        <h4 class="card__title">DAILY EMAIL</h4>
+                                        <div class="card__text">
+                                            <p>Stay Up-to-Date with Your
+                                                Deliveries:
+                                                Enjoy the Convenience of Daily
+                                                Email
+                                                Updates with Our Free Shipping
+                                                Service, Making Your Online
+                                                Shopping
+                                                Experience Even More
+                                                Enjoyable!</p>
+                                        </div>
+                                    </div>
+                                    <div class="advantages__card card">
+                                        <div class="card__image">
+                                            <img src="img/cards.svg"
+                                                alt="Cтилізовані кредитні картки">
+                                        </div>
+                                        <h4 class="card__title">EASY
+                                            PAYMENT</h4>
+                                        <div class="card__text">
+                                            <p>Shop and Pay with Ease: Our Free
+                                                Shipping Service Not Only
+                                                Delivers
+                                                Your Packages for Free, but Also
+                                                Offers Easy Payment Options,
+                                                Making
+                                                Your Shopping Experience a
+                                                Breeze!</p>
+                                        </div>
+                                    </div>
+                                    <div class="advantages__card card">
+                                        <div class="card__image">
+                                            <img src="img/badge.svg"
+                                                alt="Стилізований круглий бейджик">
+                                        </div>
+                                        <h4 class="card__title">MONTHLY
+                                            VOUCHER</h4>
+                                        <div class="card__text">
+                                            <p>More Than Just Free Shipping: Our
+                                                Service Rewards Your Loyalty
+                                                with
+                                                Monthly Vouchers, Giving You
+                                                More
+                                                Reasons to Shop and Save on Your
+                                                Favorite Products!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="task__link" href="#up">Наверх</a>
+                </div>
+            </main>
+            <footer class="footer">
+                <div class="footer__container">
+                    <a class="footer__link" href="#up">Наверх</a>
+                    <p>Листопад, 2025</p>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
