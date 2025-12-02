@@ -9,3 +9,4 @@
 9. Homework No10 https://tritochky.github.io/homeworks/lesson_10/
 10. Homework No11 https://tritochky.github.io/homeworks/lesson_11/
 11. Homework No12 https://tritochky.github.io/homeworks/lesson_12/
+12. Homework No13 https://tritochky.github.io/homeworks/lesson_13/
