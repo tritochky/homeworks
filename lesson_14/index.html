@@ -49,10 +49,11 @@
                             <form action="#" method="post"
                                 enctype="multipart/form-data"
                                 class="block__form">
-                                <div class="block__name">
+                                <div class="block__name block__name--margin">
                                     <label
                                         class="block__label">
-                                        <h4>First name <span>*</span></h4>
+                                        <span class="block__label-text">First
+                                            name <span>*</span></span>
                                         <input type="text"
                                             name="first-name"
                                             placeholder="enter your first name"
@@ -61,7 +62,8 @@
                                     </label>
                                     <label
                                         class="block__label">
-                                        <h4>Last name <span>*</span></h4>
+                                        <span class="block__label-text">Last
+                                            name <span>*</span></span>
                                         <input type="text"
                                             name="last-name"
                                             placeholder="enter your last name"
@@ -69,16 +71,20 @@
                                             class="block__input">
                                     </label>
                                 </div>
-                                <label class="block__label block__label--width">
-                                    <h4>Email <span>*</span></h4>
+                                <label
+                                    class="block__label block__label--width block__label--margin">
+                                    <span class="block__label-text">Email
+                                        <span>*</span></span>
                                     <input type="email" name="email"
                                         placeholder="some.email@gmail.com"
                                         required
                                         class="block__input">
                                 </label>
-                                <div class="block__password">
+                                <div
+                                    class="block__password block__password--margin">
                                     <label class="block__label">
-                                        <h4>Password <span>*</span></h4>
+                                        <span class="block__label-text">Password
+                                            <span>*</span></span>
                                         <input type="password"
                                             name="password"
                                             placeholder="enter your password"
@@ -87,7 +93,8 @@
                                             class="block__input">
                                     </label>
                                     <label class="block__label">
-                                        <h4>Confirm password <span>*</span></h4>
+                                        <span class="block__label-text">Confirm
+                                            password <span>*</span></span>
                                         <input type="password"
                                             name="re-password"
                                             placeholder="enter your password again"
@@ -96,9 +103,10 @@
                                             class="block__input">
                                     </label>
                                 </div>
-                                <div class="block__option">
+                                <div
+                                    class="block__option block__option--margin">
                                     <div class="block__radio">
-                                        <h4>Gender:</h4>
+                                        <p>Gender:</p>
                                         <div class="block__gender">
                                             <label for="male"
                                                 class="block__label block__label--row">
@@ -106,7 +114,7 @@
                                                     name="gender"
                                                     value="male"
                                                     class="block__input block__input--circle">
-                                                <h4>Male</h4>
+                                                Male
                                             </label>
                                             <label for="female"
                                                 class="block__label block__label--row">
@@ -114,7 +122,7 @@
                                                     name="gender"
                                                     value="female"
                                                     class="block__input block__input--circle">
-                                                <h4>Female</h4>
+                                                Female
                                             </label>
                                             <label for="other"
                                                 class="block__label block__label--row">
@@ -122,70 +130,73 @@
                                                     name="gender"
                                                     value="other"
                                                     class="block__input block__input--circle">
-                                                <h4>Other</h4>
+                                                Other
                                             </label>
                                         </div>
                                     </div>
                                     <div class="block__checkbox">
-                                        <h4>Hobbies:</h4>
+                                        <p>Hobbies:</p>
                                         <div class="block__hobbies">
                                             <label
                                                 class="block__label block__label--row">
                                                 <input type="checkbox"
                                                     name="checkbox"
                                                     class="block__input block__input--foursquare">
-                                                <h4>Music</h4>
+                                                Music
                                             </label>
                                             <label
                                                 class="block__label block__label--row">
                                                 <input type="checkbox"
                                                     name="checkbox"
                                                     class="block__input block__input--foursquare">
-                                                <h4>Sports</h4>
+                                                Sports
                                             </label>
                                             <label
                                                 class="block__label block__label--row">
                                                 <input type="checkbox"
                                                     name="checkbox"
                                                     class="block__input block__input--foursquare">
-                                                <h4>Travel</h4>
+                                                Travel
                                             </label>
                                             <label
                                                 class="block__label block__label--row">
                                                 <input type="checkbox"
                                                     name="checkbox"
                                                     class="block__input block__input--foursquare">
-                                                <h4>Movies</h4>
+                                                Movies
                                             </label>
                                         </div>
                                     </div>
                                 </div>
-                                <label class="block__label block__label--width">
-                                    <h4>Your age</h4>
+                                <label
+                                    class="block__label block__label--width">
+                                    Your age
                                     <input type="range" name="age" min="20"
                                         max="100" step="1" value="40"
                                         class="block__input">
-                                    <div class="block__age">
-                                        <p>20</p>
-                                        <p>30</p>
-                                        <p>40</p>
-                                        <p>50</p>
-                                        <p>60</p>
-                                        <p>70</p>
-                                        <p>80</p>
-                                        <p>90</p>
-                                        <p>100</p>
-                                    </div>
                                 </label>
-                                <div class="block__description">
+                                <div
+                                    class="block__age block__age--width block__age--margin">
+                                    <p>20</p>
+                                    <p>30</p>
+                                    <p>40</p>
+                                    <p>50</p>
+                                    <p>60</p>
+                                    <p>70</p>
+                                    <p>80</p>
+                                    <p>90</p>
+                                    <p>100</p>
+                                </div>
+                                <div
+                                    class="block__description block__description--margin">
                                     <label class="block__label">
-                                        <h4>Upload profile picture</h4>
+                                        Upload profile picture
                                         <input type="file" name="img"
                                             accept=".jpg"
                                             class="block__input block__input--padding">
                                     </label>
                                     <label class="block__label">
-                                        <h4>Bio</h4>
+                                        Bio
                                         <textarea autocomplete="off"
                                             placeholder="tell something about you"
                                             maxlength="300"
@@ -203,10 +214,11 @@
                             <form action="#" method="post"
                                 enctype="multipart/form-data"
                                 class="oder__form">
-                                <div class="oder__name">
+                                <div class="oder__name oder__name--margin">
                                     <label
                                         class="oder__label">
-                                        <h4>Призвіще: <span>*</span></h4>
+                                        <span class="oder__label-text">Призвіще:
+                                            <span>*</span></span>
                                         <input type="text"
                                             name="last-name"
                                             placeholder="Призвіще"
@@ -215,7 +227,8 @@
                                     </label>
                                     <label
                                         class="oder__label">
-                                        <h4>Ім'я: <span>*</span></h4>
+                                        <span class="oder__label-text">Ім'я:
+                                            <span>*</span></span>
                                         <input type="text"
                                             name="first-name"
                                             placeholder="Ім'я"
@@ -224,23 +237,27 @@
                                     </label>
                                     <label
                                         class="oder__label">
-                                        <h4>По-батькові:</h4>
+                                        По-батькові:
                                         <input type="text"
                                             name="surname"
                                             placeholder="По-батькові"
                                             class="oder__input">
                                     </label>
                                 </div>
-                                <label class="oder__label oder__label--width">
-                                    <h4>Телефон: <span>*</span></h4>
+                                <label
+                                    class="oder__label oder__label--width  oder__label--margin">
+                                    <span class="oder__label-text">Телефон:
+                                        <span>*</span></span>
                                     <input type="tel" name="phone"
                                         pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
                                         placeholder="У форматі 000-000-00-00"
                                         required
                                         class="oder__input">
                                 </label>
-                                <label class="oder__label oder__label--width">
-                                    <h4>Назва товару: <span>*</span></h4>
+                                <label
+                                    class="oder__label oder__label--width  oder__label--margin">
+                                    <span class="oder__label-text">Назва товару:
+                                        <span>*</span></span>
                                     <select name="list"
                                         class="oder__list oder__list--width">
                                         <option value="кераміка"
@@ -254,120 +271,122 @@
                                             дерев'яна</option>
                                         <option value="скло"
                                             class="oder__item">Чашка
-                                            скляна</option class="oder__item">
-                                            <option value="термо"
-                                                selected
-                                                class="oder__item">Термочашка</option>
-                                        </select>
-                                    </label>
-                                    <div class="oder__description">
-                                        <label class="oder__label">
-                                            <h4>Кількість: <span>*</span></h4>
-                                            <input type="number"
-                                                name="number"
-                                                placeholder="Виберіть кількість товару"
-                                                autocomplete="off"
-                                                required
-                                                class="oder__input">
-                                        </label>
-                                        <label class="oder__label">
-                                            <h4>Колір: <span>*</span></h4>
-                                            <input type="color"
-                                                name="color"
-                                                placeholder="Виберіть колір"
-                                                autocomplete="off"
-                                                value="#ffffff"
-                                                required
-                                                class="oder__input">
-                                        </label>
-                                    </div>
-                                    <label
-                                        class="oder__label oder__label--width">
-                                        <h4>Дата і час доставки:
-                                            <span>*</span></h4>
-                                        <input type="datetime-local" name="data"
+                                            скляна</option>
+                                        <option value="термо"
+                                            selected
+                                            class="oder__item">Термочашка</option>
+                                    </select>
+                                </label>
+                                <div
+                                    class="oder__description oder__description--margin">
+                                    <label class="oder__label">
+                                        <span
+                                            class="oder__label-text">Кількість:
+                                            <span>*</span></span>
+                                        <input type="number"
+                                            name="number"
+                                            placeholder="Виберіть кількість товару"
                                             autocomplete="off"
-                                            placeholder="Виберіть зручний час та дату"
                                             required
                                             class="oder__input">
                                     </label>
-                                    <label
-                                        class="oder__label oder__label--width">
-                                        <h4>Нотатки:</h4>
-                                        <textarea autocomplete="off"
-                                            placeholder="Що ще нам необхідно знати?"
-                                            class="oder__input oder__input--vertical"></textarea>
+                                    <label class="oder__label">
+                                        <span class="oder__label-text">Колір:
+                                            <span>*</span></span>
+                                        <input type="color"
+                                            name="color"
+                                            autocomplete="off"
+                                            value="#ffffff"
+                                            class="oder__input">
                                     </label>
-                                    <div class="oder__connection">
-                                        <button type="reset"
-                                            class="oder__button">Очистити</button>
-                                        <button type="submit"
-                                            class="oder__button">Відправити</button>
-                                    </div>
+                                </div>
+                                <label
+                                    class="oder__label oder__label--width oder__label--margin">
+                                    <span class="oder__label-text">Дата і час
+                                        доставки:
+                                        <span>*</span></span>
+                                    <input type="datetime-local" name="data"
+                                        autocomplete="off"
+                                        required
+                                        class="oder__input">
+                                </label>
+                                <label
+                                    class="oder__label oder__label--width  oder__label--margin">
+                                    Нотатки:
+                                    <textarea autocomplete="off"
+                                        placeholder="Що ще нам необхідно знати?"
+                                        class="oder__input oder__input--vertical"></textarea>
+                                </label>
+                                <div class="oder__connection">
+                                    <button type="reset"
+                                        class="oder__button">Очистити</button>
+                                    <button type="submit"
+                                        class="oder__button">Відправити</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <a class="experiments__link" href="#up">Наверх</a>
+                </div>
+                <div class="task">
+                    <h2 id="pract"> Практика</h2>
+                    <div class="task__wrapper">
+                        <div class="task__header">
+                            <h3>REGISTER TO FURNITUR</h3>
+                            <p>GET MONTHLY VOUCHER WITH JUST ONE CLICK!</p>
+                        </div>
+                        <div class="task__section">
+                            <div class="task__inform">
+                                <div class="task__form-title">
+                                    <h3>YOUR INFORMATION</h3>
+                                    <p>You already have an account? <a
+                                            href="#">Sign in here</a></p>
+                                </div>
+                                <form action="#" method="post"
+                                    class="task__form">
+                                    <input type="text" name="name"
+                                        placeholder="Your name"
+                                        class="task__input">
+                                    <input type="email"
+                                        placeholder="E-mail"
+                                        class="task__input">
+                                    <input type="tel"
+                                        placeholder="Phone number"
+                                        class="task__input">
+                                    <input type="password"
+                                        placeholder="Password"
+                                        class="task__input">
+                                    <input type="password"
+                                        placeholder="Confirm Password"
+                                        class="task__input">
+                                    <button type="submit"
+                                        class="task__button">Create an
+                                        account</button>
                                 </form>
                             </div>
-                        </div>
-                        <a class="experiments__link" href="#up">Наверх</a>
-                    </div>
-                    <div class="task">
-                        <h2 id="pract"> Практика</h2>
-                        <div class="task__wrapper">
-                            <div class="task__header">
-                                <h3>REGISTER TO FURNITUR</h3>
-                                <p>GET MONTHLY VOUCHER WITH JUST ONE CLICK!</p>
-                            </div>
-                            <div class="task__section">
-                                <div class="task__inform">
-                                    <div class="task__form-title">
-                                        <h3>YOUR INFORMATION</h3>
-                                        <p>You already have an account? <a
-                                                href="#">Sign in here</a></p>
+                            <div class="task__banner promo-banner">
+                                <img src="img/lamps.png"
+                                    alt="П'ять підвісних ламп бронзового кольору"
+                                    class="promo-banner__img">
+                                <div class="promo-banner__content">
+                                    <div class="promo-banner__badge">
+                                        <p>HOT</p>
                                     </div>
-                                    <form action="#" method="post"
-                                        class="task__form">
-                                        <input type="text" name="name"
-                                            placeholder="Your name"
-                                            class="task__input">
-                                        <input type="email"
-                                            placeholder="E-mail"
-                                            class="task__input">
-                                        <input type="tell"
-                                            placeholder="Phone number"
-                                            class="task__input">
-                                        <input type="password"
-                                            placeholder="Password"
-                                            class="task__input">
-                                        <input type="password"
-                                            placeholder="Confirm Password"
-                                            class="task__input">
-                                        <button type="submit"
-                                            class="task__button">Create an
-                                            account</button>
-                                    </form>
-                                </div>
-                                <div class="task__banner promo-banner">
-                                    <img src="img/lamps.png"
-                                        alt="П'ять підвісних ламп бронзового кольору"
-                                        class="promo-banner__img">
-                                    <div class="promo-banner__content">
-                                        <div class="promo-banner__badge">
-                                            <p>HOT</p>
-                                        </div>
-                                        <h3>DISCOUNT <br>25% FOR <br>NEW
-                                            <br>MEMBER</h3>
-                                    </div>
+                                    <h3>DISCOUNT <br>25% FOR <br>NEW
+                                        <br>MEMBER</h3>
                                 </div>
                             </div>
                         </div>
-                        <a class="task__link" href="#up">Наверх</a>
                     </div>
-                </main>
-                <footer class="footer">
-                    <div class="footer__container">
-                        <a class="footer__link" href="#up">Наверх</a>
-                        <p>Грудень, 2025</p>
-                    </div>
-                </footer>
-            </div>
-        </body>
-    </html>
+                    <a class="task__link" href="#up">Наверх</a>
+                </div>
+            </main>
+            <footer class="footer">
+                <div class="footer__container">
+                    <a class="footer__link" href="#up">Наверх</a>
+                    <p>Грудень, 2025</p>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
