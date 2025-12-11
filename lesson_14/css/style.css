@@ -182,8 +182,8 @@ h1,
     margin-bottom: 30px;
 }
 
-.oder__label-text,
-.block__label-text {
+.oder__text,
+.block__text {
     color: #2f302c;
 }
 
@@ -228,16 +228,6 @@ span {
     font-size: 20px;
     line-height: 125%;
     color: #2f302c;
-}
-
-.block__label-text {
-    display: inline-flex;
-    align-items: center;
-    gap: 5px;
-}
-
-.block__label span {
-    display: inline;
 }
 
 .oder__list,
