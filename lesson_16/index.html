@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Homework_16</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <header id="up" class="header">
+                <div class="heder__container">
+                    <div class="header__logo">
+                        <img class="header__image-logo" src="img/logo.svg"
+                            alt="Логотип сайту продажів меблів Furnitur у вигляді квадрата з чорними півколами">
+                    </div>
+                    <form action="#"
+                        class="header__search search-header">
+                        <button type="submit"
+                            class="search-header__button"></button>
+                        <input type="search" placeholder="Search something"
+                            class="search-header__input">
+                    </form>
+                    <nav class="header__menu menu">
+                        <div class="menu__body">
+                            <ul class="menu__list">
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">HOME</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">SHOP
+                                        <img src="img/chevron-down.svg"
+                                            alt="Шеврон, спрямований до низу">
+                                    </a>
+                                </li>
+                                <li class="menu__item"><a href="#"
+                                        class="menu__link">BLOG</a>
+                                </li>
+                                <li class="menu__item"><a href="#"
+                                        class="menu__link">ABOUT US</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <ul class="header__action action-header">
+                        <li class="action-header__item">
+                            <a href="#"
+                                class="action-header__link action-header__link--love">LOVE</a>
+                        </li>
+                        <li class="action-header__item">
+                            <a href="#"
+                                class="action-header__link action-header__link--cart">CART</a>
+                        </li>
+                    </ul>
+                    <button class="menu__icon"><span></span></button>
+                </div>
+            </header>
+            <main>
+                <div class="hero">
+                    <div class="hero__img-wrapper">
+                        <picture>
+                            <source
+                                srcset="img/hero-banner/avif/hero-img-1x.avif 1x, img/hero-banner/avif/hero-img-2x.avif 2x, img/hero-banner/avif/hero-img-3x.avif 3x, img/hero-banner/avif/hero-img-4x.avif 4x"
+                                type="image/avif">
+                            <source
+                                srcset="img/hero-banner/webp/hero-img-1x.webp 1x, img/hero-banner/webp/hero-img-2x.webp 2x, img/hero-banner/webp/hero-img-3x.webp 3x, img/hero-banner/webp/hero-img-4x.webp 4x"
+                                type="image/webp">
+                            <img class="hero__banner"
+                                src="img/hero-banner/jpeg/hero-banner-1x.jpg"
+                                alt="У світлій кімнаті розташовані витончений торшер, блакитне м'яке крісло на дерев'яних ніжках і маленький дерев'яний столик, на якому стоїть маленька чорна ваза у японському стилі з двома зеленими гілочками."
+                                srcset="img/hero-banner/jpeg/hero-img-2x.jpg 2x, img/hero-banner/jpeg/hero-img-3x.jpg 3x, img/hero-banner/jpeg/hero-img-4x.jpg 4x">
+                        </picture>
+                    </div>
+                    <div class="hero__container">
+                        <div class="hero__info">
+                            <h2>WELCOME TO OUR</h2>
+                            <h1><span>FUNITURE</span><br>GALLERY</h1>
+                            <h2>BROWSE OUR SELECTIONS</h2>
+                            <p>Featuring sleek designs and innovative materials
+                                that
+                                seamlessly blend form and function.</p>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <footer class="footer">
+                <div class="footer__container">
+                    <p>Грудень, 2025</p>
+                </div>
+            </footer>
+        </div>
+        <script src="js/script.js"></script>
+    </body>
+</html>
