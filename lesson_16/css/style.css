@@ -68,7 +68,7 @@ body {
     flex-grow: 1;
 }
 
-.menu__icon {
+.header__menu-icon {
     display: none;
 }
 
@@ -291,7 +291,7 @@ body {
     .heder__container {
         min-height: 70px;
     }
-    .menu__icon,
+    .header__menu-icon,
     .header__logo,
     .header__search,
     .header__action {
@@ -302,15 +302,15 @@ body {
         content: "";
         height: 2px;
     }
-    .menu__icon {
+    .header__menu-icon {
         display: block;
         width: 30px;
         height: 18px;
         flex-shrink: 0;
     }
-    .menu__icon span,
-    .menu__icon::before,
-    .menu__icon::after {
+    .header__menu-icon span,
+    .header__menu-icon::before,
+    .header__menu-icon::after {
         content: "";
         height: 2px;
         width: 30px;
@@ -319,13 +319,13 @@ body {
         right: 0;
         transition: all 0.3s;
     }
-    .menu__icon::before {
+    .header__menu-icon::before {
         top: 0;
     }
-    .menu__icon::after {
+    .header__menu-icon::after {
         bottom: 0;
     }
-    .menu__icon span {
+    .header__menu-icon span {
         top: 50%;
         translate: 0 -50%;
     }
@@ -374,15 +374,15 @@ body {
     .action-header__link--cart {
         background: url(../img/bag.svg) 0 0 no-repeat;
     }
-    [data-menu-open] .menu__icon span {
+    [data-menu-open] .header__menu-icon span {
         width: 0;
     }
-    [data-menu-open] .menu__icon::before {
+    [data-menu-open] .header__menu-icon::before {
         rotate: -45deg;
         top: 50%;
         translate: 0 -50%;
     }
-    [data-menu-open] .menu__icon::after {
+    [data-menu-open] .header__menu-icon::after {
         rotate: 45deg;
         bottom: 50%;
         translate: 0 50%;
