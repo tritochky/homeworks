@@ -29,7 +29,7 @@ body {
     background-color: #fff;
 }
 
-.heder__container {
+.header__container {
     min-height: 164px;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -207,7 +207,7 @@ body {
 }
 
 @media (width <= 1422px) {
-    .heder__container {
+    .header__container {
         min-height: 120px;
         gap: 40px;
     }
@@ -234,7 +234,6 @@ body {
         max-width: 1000px;
     }
     .hero__info {
-        /* flex: 0; */
         flex-basis: 450px;
     }
     .hero__info h1 {
@@ -252,7 +251,7 @@ body {
 }
 
 @media (width <= 1006px) {
-    .heder__container {
+    .header__container {
         min-height: 100px;
         gap: 30px;
     }
@@ -288,7 +287,7 @@ body {
 }
 
 @media (width < 773px) {
-    .heder__container {
+    .header__container {
         min-height: 70px;
     }
     .header__menu-icon,
@@ -405,7 +404,7 @@ body {
 }
 
 @media (width < 480px) {
-    .heder__container {
+    .header__container {
         gap: 15px;
     }
     .header__logo {
@@ -445,6 +444,6 @@ body {
         display: block;
     }
     .hero__banner {
-        object-position: 15% center;
+        object-position: 10% center;
     }
 }
