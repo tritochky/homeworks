@@ -344,19 +344,19 @@
                                 </div>
                                 <form action="#" method="post"
                                     class="task__form">
-                                    <input type="text" name="name"
+                                    <input type="text" name="name" required
                                         placeholder="Your name"
                                         class="task__input">
-                                    <input type="email"
+                                    <input type="email" required
                                         placeholder="E-mail"
                                         class="task__input">
-                                    <input type="tel"
+                                    <input type="tel" required
                                         placeholder="Phone number"
                                         class="task__input">
-                                    <input type="password"
+                                    <input type="password" required
                                         placeholder="Password"
                                         class="task__input">
-                                    <input type="password"
+                                    <input type="password" required
                                         placeholder="Confirm Password"
                                         class="task__input">
                                     <button type="submit"
@@ -365,15 +365,18 @@
                                 </form>
                             </div>
                             <div class="task__banner promo-banner">
-                                <img src="img/lamps.png"
-                                    alt="П'ять підвісних ламп бронзового кольору"
-                                    class="promo-banner__img">
+                                <div class="promo-banner__image">
+                                    <img src="img/lamps.png"
+                                        alt="Five bronze-colored pendant lamps">
+                                </div>
                                 <div class="promo-banner__content">
-                                    <div class="promo-banner__badge">
+                                    <div class="promo-banner__lable">
                                         <p>HOT</p>
                                     </div>
-                                    <h3>DISCOUNT <br>25% FOR <br>NEW
-                                        <br>MEMBER</h3>
+                                    <h3 class="promo-banner__title">
+                                        DISCOUNT <br>25% FOR <br>NEW
+                                        <br>MEMBER
+                                    </h3>
                                 </div>
                             </div>
                         </div>

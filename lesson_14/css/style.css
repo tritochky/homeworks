@@ -504,23 +504,31 @@ span {
     opacity: 0;
 }
 
-.task__banner {
-    flex-basis: 600px;
-    background-color: rgb(246, 246, 246);
+.promo-banner {
     position: relative;
+    padding-bottom: 60px;
+    padding-left: 80px;
+    flex-basis: 600px;
+    min-height: 496px;
+    background-color: #f6f6f6;
     overflow: hidden;
 }
 
-.promo-banner__img {
-    position: relative;
+.promo-banner__image {
+    position: absolute;
     top: 0;
-    left: 28.66%;
+    right: 50px;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .promo-banner__content {
-    position: absolute;
-    top: 45.16%;
-    left: 80px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: flex-start;
+    justify-content: end;
 }
 
 .promo-banner__content h3 {
@@ -528,25 +536,29 @@ span {
     text-transform: uppercase;
 }
 
-.promo-banner__badge {
-    width: 51px;
-    height: 28px;
-    background-color: rgb(206, 0, 0);
-    border-radius: 4px;
+.promo-banner__lable {
     padding: 4px 8px;
-    margin-bottom: 24px;
+    border-radius: 4px;
+    background-color: #ce0000;
 }
 
-.promo-banner__badge p {
+.promo-banner__lable p {
     font-weight: 700;
     line-height: 125%;
     color: rgb(255, 255, 255);
 }
 
+.promo-banner__title {
+    max-width: 184px;
+    font-weight: 800;
+    font-size: 32px;
+    text-transform: uppercase;
+}
+
 .task__button {
     padding: 12px;
-    width: 336px;
-    height: 44px;
+    min-width: 336px;
+    min-height: 44px;
     background-color: rgb(47, 48, 44);
     font-weight: 500;
     line-height: 125%;
