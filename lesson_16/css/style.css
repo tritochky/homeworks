@@ -7,6 +7,10 @@ body {
     color: #7e7f7c;
 }
 
+[data-menu-open] body {
+    overflow: hidden;
+}
+
 .wrapper {
     position: relative;
     min-height: 100%;
@@ -26,6 +30,9 @@ body {
 }
 
 .header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
     background-color: #fff;
 }
 
@@ -111,11 +118,11 @@ body {
 }
 
 .action-header__link--love {
-    background: url(../img/heart.svg) 0 0 no-repeat;
+    background: url(../img/heart.svg) 3px 3px no-repeat;
 }
 
 .action-header__link--cart {
-    background: url(../img/bag.svg) 0 0 no-repeat;
+    background: url(../img/bag.svg) 3px 2px no-repeat;
 }
 
 .hero {
@@ -368,10 +375,10 @@ body {
         background-size: contain;
     }
     .action-header__link--love {
-        background: url(../img/heart.svg) 0 0 no-repeat;
+        background: url(../img/heart.svg) 4px 5px no-repeat;
     }
     .action-header__link--cart {
-        background: url(../img/bag.svg) 0 0 no-repeat;
+        background: url(../img/bag.svg) 5px 3px no-repeat;
     }
     [data-menu-open] .header__menu-icon span {
         width: 0;
