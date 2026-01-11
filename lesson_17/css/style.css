@@ -153,6 +153,7 @@ main > * {
     padding: 15px 0;
 }
 
+.hero__info h2,
 .hero__info h3 {
     padding: 0;
     margin: 0 0 20px 5px;
@@ -199,7 +200,7 @@ main > * {
     width: 100%;
 }
 
-h2 {
+h2:not(.hero__info h2) {
     font-weight: 800;
     font-size: 32px;
     line-height: 125%;
@@ -579,6 +580,7 @@ h3 {
     .hero__info h1 {
         margin-bottom: 25px;
     }
+    .hero__info h2,
     .hero__info h3 {
         margin-bottom: 15px;
     }
@@ -621,6 +623,7 @@ h3 {
         font-size: 48px;
         margin-bottom: 20px;
     }
+    .hero__info h2,
     .hero__info h3 {
         font-size: 16px;
         margin-bottom: 12px;
