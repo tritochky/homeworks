@@ -14,4 +14,4 @@
 14. Homework No16 https://tritochky.github.io/homeworks/lesson_16/
 15. Homework No17 https://tritochky.github.io/homeworks/lesson_17/
 16. Homework No18 https://tritochky.github.io/homeworks/lesson_18/
-17 .Homework No19 https://tritochky.github.io/homeworks/lesson_19/
+17. Homework No19 https://tritochky.github.io/homeworks/lesson_19/
