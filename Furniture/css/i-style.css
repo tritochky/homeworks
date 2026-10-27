@@ -1,0 +1,68 @@
+@font-face {
+  font-family: "icons";
+  src: url("../fonts/icons.woff2") format("woff2");
+  /*     url("fonts/icons.ttf?82emn6") format("truetype"),
+    url("fonts/icons.woff?82emn6") format("woff"),
+    url("fonts/icons.svg?82emn6#icons") format("svg"); */
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="--icon-"],
+[class*=" --icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icons" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.--icon-s-pinterest:before {
+  content: "\e90c";
+}
+.--icon-cart:before {
+  content: "\e900";
+}
+.--icon-favorit:before {
+  content: "\e901";
+}
+.--icon-grid:before {
+  content: "\e902";
+}
+.--icon-list:before {
+  content: "\e903";
+}
+.--icon-minus:before {
+  content: "\e904";
+}
+.--icon-plus:before {
+  content: "\e905";
+}
+.--icon-search:before {
+  content: "\e906";
+}
+.--icon-select-arrow:before {
+  content: "\e907";
+}
+.--icon-s-faceboock:before {
+  content: "\e908";
+}
+.--icon-shevron:before {
+  content: "\e909";
+}
+.--icon-s-instagram:before {
+  content: "\e90a";
+}
+.--icon-star:before {
+  content: "\e90d";
+}
+.--icon-s-tweetter:before {
+  content: "\e90b";
+}

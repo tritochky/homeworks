@@ -1,0 +1,134 @@
+@font-face {
+    font-family: "icons";
+    src: url("../fonts/icons.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class*="--icon-"] {
+    &::before {
+        font-family: "icons" !important;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+
+        /* Better Font Rendering =========== */
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+}
+
+/* [class*="--icon-shevron"]::before {
+    content: "\f000";
+}
+
+[class*="--icon-s-facebook"]::before {
+    content: "\f001";
+}   
+
+[class*="--icon-select-arrow"]::before {
+    content: "\f002";
+}
+
+[class*="--icon-search"]::before {
+    content: "\f003";
+}
+
+[class*="--icon-plus"]::before {
+    content: "\f004";
+}
+
+[class*="--icon-minus"]::before {
+    content: "\f005";
+}
+
+[class*="--icon-list"]::before {
+    content: "\f006";
+}
+
+[class*="--icon-grid"]::before {
+    content: "\f007";
+}
+
+[class*="--icon-favorit"]::before {
+    content: "\f008";
+}
+
+[class*="--icon-cart"]::before {
+    content: "\f009";
+}
+
+[class*="--icon-s-tweetter"]::before {
+    content: "\f00a";
+}
+
+[class*="--icon-star"]::before {
+    content: "\f00b";
+}
+
+[class*="--icon-s-pinterest"]::before {
+    content: "\f00c";
+}
+
+[class*="--icon-s-instagram"]::before {
+    content: "\f00d";
+} */
+
+[class*="--icon-s-pinterest"]::before {
+    content: "\e90c";
+}
+
+[class*="--icon-cart"]::before {
+    content: "\e900";
+}
+
+[class*="--icon-favorit"]::before {
+    content: "\e901";
+}
+
+[class*="--icon-grid"]::before {
+    content: "\e902";
+}
+
+[class*="--icon-list"]::before {
+    content: "\e903";
+}
+
+[class*="--icon-minus"]::before {
+    content: "\e904";
+}
+
+[class*="--icon-plus"]::before {
+    content: "\e905";
+}
+
+[class*="--icon-search"]::before {
+    content: "\e906";
+}
+
+[class*="--icon-select-arrow"]::before {
+    content: "\e907";
+}
+
+[class*="--icon-s-facebook"]::before {
+    content: "\e908";
+}
+
+[class*="--icon-shevron"]::before {
+    content: "\e909";
+}
+
+[class*="--icon-s-instagram"]::before {
+    content: "\e90a";
+}
+
+[class*="--icon-star"]::before {
+    content: "\e90d";
+}
+
+[class*="--icon-s-tweetter"]::before {
+    content: "\e90b";
+}
